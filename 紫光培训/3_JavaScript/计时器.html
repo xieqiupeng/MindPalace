@@ -1,0 +1,40 @@
+<html>
+	<head>
+	<title> 计时器 </title>
+		<link rel=stylesheet href=".css" type="text/css">
+		<script src=".js"></script>
+		<style type="text/css"></style>
+		<script type="text/javascript">
+			var intervalId;					
+			function startWait()
+			{
+				setTimeout(startChange,2000);
+				//alert(1);
+			}
+			function startChange()
+			{
+				intervalId = setInterval(changeContent,1000);
+				//alert(2);
+			}
+			function changeContent()
+			{
+				var inputObj = document.getElementById("text_content");
+				inputObj.value = parseInt(inputObj.value) + 1;
+				//alert(3);
+			}
+			function endChange()
+			{
+				intervalId = clearInterval(intervalId);
+				intervalId = null;
+			}	
+		</script>
+	</head>
+
+	<body>
+		<form>
+			<input type="text" id="text_content"/>
+			<input type="button" value="2秒后开始" onclick="startWait()"/>
+			<input type="button" value="结束" onclick="endChange()"/>
+		</form>
+	</body>
+</html>

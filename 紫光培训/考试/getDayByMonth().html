@@ -1,0 +1,29 @@
+<html>
+	<head>
+	<title> 空模板 </title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+		<link rel=stylesheet href=".css" type="text/css">
+		<script src=".js" type="text/javascript"></script>
+		<style type="text/css"></style>
+		<script type="text/javascript">
+			function getDayByMonth () {
+				var oneDay = new Date();
+				oneDay.setDate(1);
+				var weekday = oneDay.getDay();
+				if (weekday == 1) {
+					alert(weekday);
+				}
+				else if (weekday==0) {
+					alert(weekday+2);
+				}
+				else
+				{
+					alert(7-weekday+2);
+				}
+			}
+		</script>
+	</head>
+
+	<body onload="getDayByMonth()">
+	</body>
+</html>

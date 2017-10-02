@@ -1,0 +1,4 @@
+动态详情 timeLineComment.html?id=(动态id)
+个人中心 userCenter.html?userid=(用户id)
+私信 onlinechat.html?targetId=&userId=&userAvatar=
+(对象id，用户id，当前用户头像

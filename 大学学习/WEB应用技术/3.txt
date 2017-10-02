@@ -1,0 +1,29 @@
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+        for (int i = 0; i < ListBox1.Items.Count; i++)
+        {
+            if (ListBox1.Items[i].Selected == true)
+                ListBox2.Items.Add(ListBox1.Items[i].Value);
+        }
+        for (int j = ListBox1.Items.Count-1;j > -1; j--)
+        {
+            int m;
+            m = j;
+            if (ListBox1.Items[m].Selected == true)
+                ListBox1.Items.Remove(ListBox1.Items[m].Value);
+        }
+
+
+        for (int i = 0; i < ListBox2.Items.Count; i++)
+        {
+            if (ListBox2.Items[i].Selected == true)
+                ListBox1.Items.Add(ListBox2.Items[i].Value);
+        }
+        for (int j = ListBox2.Items.Count - 1; j > -1; j--)
+        {
+            int m;
+            m = j;
+            if (ListBox2.Items[m].Selected == true)
+                ListBox2.Items.Remove(ListBox2.Items[m].Value);
+        }
+   }

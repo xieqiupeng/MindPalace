@@ -1,0 +1,119 @@
+<html>
+	<head>
+	<title> 菜单 </title>
+		<style type="text/css">
+			.layout{margin:0px auto;}
+			#ul
+			{
+				width:600px;
+				height:20px;
+				padding-left:20px;
+				background-color:#CCCCCC;
+				/*float:left;*/
+			}
+			#ul li
+			{
+				margin:0px 10px;
+				float:left;
+
+			}
+			a:link
+			{
+				display:block;
+				height:20px;
+				padding:0px 5px;
+				color:black;
+				text-decoration:none;
+			}
+			a:hover
+			{
+				color:white;
+				background-color:#CE0000;
+			}
+			ul
+			{
+				width:100px;
+				padding:0px;
+				background-color:#EEEEEE;
+				list-style:none;
+			}
+		</style>
+		<script type="text/javascript">
+			function ulBlock(i)
+			{
+				document.getElementById(i).style.display="block";
+				//var position=document.getElementById("ul").getElementsByTagName("li");
+				//alert(position[1].innerHTML);
+				//position[i].className="newStyle";
+			}
+			function ulHidden(i)
+			{
+				document.getElementById(i).style.display="none";
+			}
+		</script>
+	</head>
+
+	<body onload="ulHidden(1),ulHidden(2),ulHidden(3),ulHidden(4),ulHidden(5),ulHidden(6)">
+		<ul id="ul" class="layout">		
+			<li onmouseover="ulBlock('1')" onmouseout="ulHidden('1')">
+				<a href="404.html">产品介绍</a>
+				<ul id="1">
+				<li><a href="404.html">产品一</a></li>
+				<li><a href="404.html">产品一</a></li>
+				<li><a href="404.html">产品一</a></li>
+				<li><a href="404.html">产品一</a></li>
+				</ul>
+			</li>
+			<li onmouseover="ulBlock('2')" onmouseout="ulHidden('2')">
+				<a href="404.html">服务介绍</a>
+				<ul id="2">
+				<li><a href="404.html">产品二</a></li>
+				<li><a href="404.html">产品二</a></li>
+				<li><a href="404.html">产品二</a></li>
+				<li><a href="404.html">产品二</a></li>
+				</ul>
+			</li>
+			<li onmouseover="ulBlock('3')" onmouseout="ulHidden('3')">
+				<a href="404.html">成功案例</a>
+				<ul id="3">
+				<li><a href="404.html">产品三</a></li>
+				<li><a href="404.html">产品三</a></li>
+				<li><a href="404.html">产品三</a></li>
+				<li><a href="404.html">产品三</a></li>
+				</ul>
+			</li>
+			<li onmouseover="ulBlock('4')" onmouseout="ulHidden('4')">
+				<a href="404.html">关于我们</a>
+				<ul id="4">
+				<li><a href="404.html">产品四</a></li>
+				<li><a href="404.html">产品四</a></li>
+				<li><a href="404.html">产品四</a></li>
+				<li><a href="404.html">产品四</a></li>
+				</ul>
+			</li>
+			<li onmouseover="ulBlock('5')" onmouseout="ulHidden('5')">
+				<a href="404.html">在线演示</a>
+				<ul id="5">
+				<li><a href="404.html">产品五</a></li>
+				<li><a href="404.html">产品五</a></li>
+				<li><a href="404.html">产品五</a></li>
+				<li><a href="404.html">产品五</a></li>
+				</ul>
+			</li>
+			<li onmouseover="ulBlock('6')" onmouseout="ulHidden('6')">
+				<a href="404.html">联系我们</a>
+				<ul id="6">
+				<li><a href="404.html">产品六</a></li>
+				<li><a href="404.html">产品六</a></li>
+				<li><a href="404.html">产品六</a></li>
+				<li><a href="404.html">产品六</a></li>
+				</ul>
+			</li>
+		</ul>
+		
+		
+		
+		
+		
+	</body>
+</html>

@@ -1,0 +1,68 @@
+/* 全局变量 */
+			.layout
+			{
+				width: 1000px;
+				margin: 10px 174.5px;
+			}
+			.fleft{float:left;}
+/* 全局变量 */
+			#local
+			{
+				font-size:14px;
+				clear:both;
+			}
+			#local .nav
+			{
+				height:35px;
+				line-height:35px;
+				border-bottom:2px solid #D5D5D5;
+				margin-bottom: 4px;
+			}
+			#local h3
+			{
+				margin:0px;
+				padding-left:10px;
+				font-size:14px;
+				float:left;
+			}
+			#local form{padding-top:8px;float:left;}
+			#local select{border:0px solid black;}
+			#local h4
+			{
+				font-family:微软雅黑;
+				font-size:16px;
+				margin-bottom: 14px;
+			}
+			#local ul
+			{
+				width:1040px;
+				margin:0px;
+				padding:0px;
+				float:left;
+			}
+			#local li
+			{
+				width:195px;
+				border-right:1px solid #F4F4F4;
+				margin:5px;
+				padding:0px;
+				list-style:none;
+				float:left;
+			}
+			#local p
+			{
+				font-size:12px;
+				padding:5px 0px 5px;
+				margin:0px;
+				float:left;
+			}
+			#local hr
+			{
+				margin-right:10px;
+				color:#F4F4F4;
+				clear:both;
+			}
+			#local .blue{color:#286AFF;}
+			#local .brown{color:#BFA340;}
+			#local .green{color:#63D039;}
+			#local .orange{color:#FA6008;}

@@ -1,0 +1,277 @@
+/*全局变量*/
+body
+{
+	margin:0px;
+	font-size:12px;
+}
+a
+{
+	text-decoration:none;
+	color:#636363;
+}
+.fleft
+{
+	float:left;
+}
+.fright
+{
+	float:right;
+}
+.layout
+{
+	border-collapse: collapse;
+	display: block;
+	width: 1000px;
+	margin: 0px 174.5px;;
+}
+/*全局变量*/
+.page
+{
+	height:25px;
+}
+.page .nav 
+{
+	height:50px;
+	margin:0px;
+	border-bottom: 2px solid #f27b03;
+	font-size:14px;
+	text-decoration:none;
+}
+.page .nav a
+{
+	color:#DB3D00;
+	font-weight:700;
+	font-size:14px;
+}
+.page .nav ul
+{
+	height:50px;
+	margin:0px;
+	padding:0px;
+	font-size:12px;
+}
+.page .nav li
+{
+	margin:0px;
+	margin-top: 25px;
+	padding:1px 15px 0px;
+	list-style:none;
+	float:left;
+
+.page .nav .fright
+{
+	
+	float:right;
+}
+.page-nav a:hover
+{
+	color:white;
+	background:url("../img/buttonimage.png") repeat-x center ;
+	font-size:14px;
+	text-decoration:none;
+	position:relative;
+	line-height::25px;
+	display:block;
+}
+.page-nav img
+{
+	position:relative;
+	top:-15px;
+}
+.hot1content
+{
+	width:1100px;
+	position:relative;
+	top:15px;
+	height:430px;
+}
+.leftframe1
+{
+	width:195px;
+	border:2px solid #F07C05;
+	height:410px;
+	background-color:#FFF9ED;
+	float:left;
+}
+.leftframe1 .left
+{
+	font-size:14px;
+	float:left;
+	font-weight:700;
+}
+.leftframe1 .right
+{
+	font-size:14px;
+	float:right;
+}
+.leftframe1 hr
+{
+	border: 0px solid black;
+}
+.leftframe1 div
+{
+	clear:left;
+	border-top:1px solid #F07C05;
+	padding:10px;
+}
+.leftframe1 p
+{
+	text-align:left;
+	font-weight:700;
+	text-indent:20px;
+	margin:4px auto;
+	position:relative;
+	top:-3px;
+}	
+.leftframe1 a
+{
+	margin:4px;
+	float:left;
+}
+#gouwu p
+{
+	background-image:url("../img/gouwu.png");
+	background-position:left top;
+	background-repeat:no-repeat;
+}
+#shenghuo p
+{
+	background-image:url("../img/shenghuo.png");
+	background-position:left top;
+	background-repeat:no-repeat;
+}
+#hudong p
+{
+	background-image:url("../img/hudong.png");
+	background-position:left top;
+	background-repeat:no-repeat;
+}
+#gongju p
+{
+	background-image:url("../img/gongju.png");
+	background-position:left top;
+	background-repeat:no-repeat;
+}
+#qita p
+{
+	background-image:url("../img/qita.png");
+	background-position:left top;
+	background-repeat:no-repeat;
+}
+.middleframe1
+{
+	float:left;
+	width:500px;
+	padding:10px;
+}
+#div4
+{
+	border-bottom:1px solid #EAEAEA;
+	height:40px;
+}
+#div5
+{
+	text-align:left;
+	padding:5px 15px;
+	position:relative;
+/*    top:-2px;*/
+	float:left;
+}
+#div6
+{
+	position:relative;
+	float:right;
+	padding:5px 15px;
+}
+#bigad
+{
+	height:130px;
+	width:520px;
+}
+#smallad
+{
+	height:80px;
+	width:520px;
+}
+#bigad * 
+{
+	float:left;
+	position:relative;
+	margin:auto 5px;
+}
+#smallad *
+{	
+	float:left;
+	position:relative;
+	margin:auto 1px;
+}
+.rightframe
+{
+	width:320px;
+	float:left;
+}
+.subframe
+{
+	width:310px;
+	border:1px solid #D6D6D6;
+	float:left;
+}
+.subframe .top
+{
+	background-color:#EEEEEE;
+	height:30px;
+	line-height:30px;
+	vertical-align:middle;
+	width:100%;
+}
+.subframe .top .dowhat,.subframe2 .top .dowhat
+{
+	font-size:12px;
+	color:#9C9C9C;
+	font-weight:400;
+}
+.subframe .top a:link
+{
+	font-size:12px;
+	margin: 5px 10px;
+	height:30px;
+	width:auto;
+	line-height:30px;
+}
+#buttongroup
+{
+	width:350px;
+	height:60px;
+	line-height:60px;
+	text-align:left;
+	vertical-align:middle;
+	float:left;
+}
+#buttongroup input
+{
+	margin:auto -5px;
+	position:relative;
+	left:5px;
+	top:5px;
+}
+.subframe .content
+{
+	padding:5px 15px;
+	text-align:left;
+}
+.content div
+{
+	float:left;
+}
+.top span
+{
+	font-weight:700;
+/*    text-indent:-10px;*/
+	padding-left:10px;
+	font-size:14px;
+}
+.rightframe img
+{
+	position:relative;
+	left:-4px;
+}

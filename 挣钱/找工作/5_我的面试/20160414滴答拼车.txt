@@ -1,0 +1,44 @@
+1、64k问题，当方法数超过65535的时候，编译会有问题。
+
+2、1~54张牌，打乱顺序
+Shuffle
+
+3、反转2叉树
+
+4、单例
+
+5、切金块问题
+返回金块
+
+6、activity和fragment生命周期
+
+7、github常用的库。
+
+8、Java 泛型中 ? 和 T的区别是什么
+?是通配符，T是变量
+
+8、service的context和activity的context什么区别
+
+这是两种不同的context，也是最常见的两种.第一种中context的生命周期与Application的生命周期相关的，context随着Application的销毁而销毁，伴随application的一生，与activity的生命周期无关。
+第二种中的context跟Activity的生命周期是相关的，但是对一个Application来说，Activity可以销毁几次，那么属于Activity的context就会销毁多次.至于用哪种context，得看应用场景，个人感觉用Activity的context好一点，不过也有的时候必须使用Application的context.application context可以通过
+Context.getApplicationContext或者Activity.getApplication方法获取.
+还有就是，在使用context的时候，小心内存泄露，防止内存泄露，注意一下几个方面：
+　1. 不要让生命周期长的对象引用activity context，即保证引用activity的对象要与activity本身生命周期是一样的
+　2. 对于生命周期长的对象，可以使用application context
+　3. 避免非静态的内部类，尽量使用静态类，避免生命周期问题，注意内部类对外部对象引用导致的生命周期变化
+
+现在回到正题，说一下android全局变量，在平时的开发过程中，有时候可能会需要一些全局数据，来让应用中的所有Activity和View都能访问到，大家在遇到这种情况时，可能首先会想到自己定义一个类，然后创建很多静态成员，android已经为我们提供了这种情况的解决方案：
+在Android中，有一个Application类，在Activity中可以使用getApplication（）方法获得实例，使用它就可以获得当前应用的主题、资源文件中的内容等，这个类更灵活的一个特性就是可以被继承，来添加自己的全局属性.例如开发一个游戏，需要保存分数，那么我们就可以继承Application
+
+应用程序创建Context实例的情况有如下几种情况：
+
+1、创建Application 对象时， 而且整个App共一个Application对象
+
+2、创建Service对象时
+
+3、创建Activity对象时
+
+因此应用程序App共有的Context数目公式为：
+
+总Context实例个数 = Service个数 + Activity个数 + 1（Application对应的Context实例）
+

@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<title> 先淡入再淡出最后弹框 </title>
+		<script type="text/javascript" src="jquery.min.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$("img").hide();
+			$("input").click(function(){
+				$("img").fadeIn(2000,function(){	//"slow"==2000
+					$("img").fadeOut(2000,function(){
+						alert("哈哈，我出来了。");
+					});
+				});
+			});
+		});
+		</script>
+	</head>
+
+	<body>
+		<img src="猫.jpg" width="150px"/>
+		<br/>
+		<input type="button" value="先淡入再淡出最后弹框"/>
+	</body>
+</html>

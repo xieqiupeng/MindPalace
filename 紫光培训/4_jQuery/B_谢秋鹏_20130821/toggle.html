@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+ <head>
+  <title> 预定义值 </title>
+   <script type="text/javascript" src="jquery.min.js"></script>
+	<style type="text/css">
+		div
+		{
+			width:100%;
+			height:250px; 
+			position:relative;
+			background-color:green;
+		}
+	</style>
+	<script type="text/javascript">
+		function pull()
+		{
+			$("div").animate({height:'toggle'});
+		}
+	</script>
+ </head>
+
+	<body>
+		<div><p>好好学习，天天向上</p></div>
+		<br/>
+		<input type="button" value="点击隐藏和显示" onclick="pull()"/>
+	</body>
+</html>

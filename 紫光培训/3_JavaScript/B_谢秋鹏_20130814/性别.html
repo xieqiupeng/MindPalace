@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<title> checkSex </title>
+		<script type="text/javascript">
+			function checkSex(value)
+			{
+				var objTextarea=document.getElementById("textarea");
+				if (1==value)
+				{
+					objTextarea.innerHTML=("帅哥一个");
+				}
+				else if(2==value)
+				{
+					objTextarea.innerHTML=("美女一枚");
+				}
+			}
+		</script>
+	</head>
+	<body onload="checkSex(1)">
+		<form>
+			<input type="radio" value="1" name="userSex" checked="checked" onclick="checkSex(value)"/>
+			<input type="radio" value="2" name="userSex" onclick="checkSex(value)"/>
+			<textarea id="textarea"></textarea>
+		</form>
+	</body>
+</html>

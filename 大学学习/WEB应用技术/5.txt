@@ -1,0 +1,55 @@
+banner.ascx.cs
+
+
+public partial class WebUserControl : System.Web.UI.UserControl
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+    }
+
+
+        public string Language
+    {
+        get
+        {
+            return DropDownList1.SelectedValue;
+        }
+        set
+        {
+            Label2.Text = value;
+        }
+    }
+
+    protected void TextBox1_TextChanged(object sender, EventArgs e)
+    {
+        DropDownList1.Items.Add(TextBox1.Text);
+
+    }
+
+    public void ChangeLabelContext(object sender, string value)
+    {
+        Label1.Text = value;
+    }
+
+
+    public void AddLanguage(object sender, string value)
+    {
+        DropDownList1.Items.Add(value);
+    }
+
+}
+
+
+wan2_5.aspx
+
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+        TextBox1.Text = Banner1.Language;
+
+        Banner1.Language = "11";
+        Banner1.ChangeLabelContext(sender, "helo");
+        Banner1.AddLanguage(sender,"22");
+
+    }
+

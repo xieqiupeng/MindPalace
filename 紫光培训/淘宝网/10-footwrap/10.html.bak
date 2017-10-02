@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<title> 10 </title>
+		<style text="text/css">
+			div
+			{
+				width:1040px;
+				border:0px solid black;
+				font-size:12px;
+			}
+			ul
+			{
+				border:0px solid black;
+				width:1040px;
+				height:37px;
+				margin:0px;
+				padding:0px;
+				list-style:none;
+				border-collapse:collapse;
+			}
+			li
+			{
+				border:0px solid #C8C8C6;
+				border-right:1px solid #C8C8C6;;
+				height:15px;
+				margin:10px;
+				margin-left:0px;
+				margin-right:0px;
+				padding:0px;
+				padding-left:10px;
+				padding-right:10px;
+				float:left;
+			}
+			.ul1
+			{
+				height:50px;
+				border:0px solid blue;
+				border-top:2px solid orange;
+				border-bottom:1px solid #C8C8C6;
+			}
+			.li1
+			{
+				margin:15px;
+				margin-left:0px;
+				margin-right:0px;
+			}
+			.grey{color:#C8C8C6;}
+			.float{float:right;}
+		</style>
+	</head>
+
+	<body>
+		<div>
+			<img class="float" src="10_2.png"/>
+		<ul class="ul1">
+			<li class="li1">阿里巴巴集团</li>
+			<li class="li1">
+				<span class="grey">阿里巴巴网络：</span>国际站 中国站 全球速卖通
+			</li>
+			<li class="li1">淘宝网</li>
+			<li class="li1">天猫</li>
+			<li class="li1">一淘</li>
+			<li class="li1">阿里云</li>
+			<li class="li1">支付宝</li>
+			<li class="li1">聚划算</li>
+			<li class="li1">更多<img src="10_3.jpg"></li>
+		</ul>
+		<ul>
+			<li>关于淘宝</li>
+			<li>合作伙伴</li> 
+			<li>营销中心</li> 
+			<li>联系客服</li> 
+			<li>开放平台</li> 
+			<li>诚征英才</li> 
+			<li>联系我们</li> 
+			<li>网站地图</li>
+			<li>法律声明</li>  
+			<li><img src="10_4.jpg"/><span class="grey">2013 Taobao.com 版权所有</span></li>
+		</ul>
+		
+		<ul class="grey">
+			<li>网络文化经营许可证：文网文[2010]040号</li>
+			<li>增值电信业务经营许可证：浙B2-20080224-1</li>
+			<li>信息网络传播视听节目许可证：1109364号</li>
+		</ul>
+	
+		<ul>
+			<li>
+			<img src="10_1.png"/>
+			</li>
+		</ul>
+	</div>
+	</body>
+</html>

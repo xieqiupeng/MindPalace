@@ -1,0 +1,28 @@
+11
+13
+A
+B
+C
+D
+E
+F
+G
+H
+I
+J
+K
+A B 10
+A C 20
+B D 15
+C E 30
+E F 50
+D F 40
+F J 20
+G J 15
+G H 20
+H I 20
+E K 50
+E G 70
+I K 10
+
+

@@ -1,0 +1,130 @@
+/* 全局变量 */
+			.layout
+			{
+				width: 1000px;
+				margin: 10px 174.5px;;
+			}
+/* 全局变量 */
+			#guide
+			{
+				font-family: tahoma, arial, 宋体;
+				font-size: 12px;
+			}
+			#guide h3
+			{
+				font-size:14px;
+				font-weight: 700;	
+				margin-right: 20px;
+				float: left;
+			}
+			#guide h4
+			{
+				font-size:14px;
+				font-weight: 700;
+				margin-top: 15px;
+			}
+			#guide .nav
+			{
+				width: 1000px;
+				border-bottom: 2px solid rgb(213, 213, 213);
+				margin:0px;
+				padding: 14px 10px 5px;
+				font-size:14px;
+				float:left;
+			}
+			#guide .nav li
+			{	
+				padding-right:10px;
+				margin:0px;
+				list-style:none;
+				float: left;
+			}
+			#guide .body 
+			{
+				width:1000px;
+				margin:0px;
+				padding: 11px 0 11px 10px;
+				height: 900px;
+				overflow: hidden;
+				float: left;
+			}
+			#guide .body div{float: left;}
+			#guide .body ul
+			{
+				width: 330px;
+				margin:0px;
+				padding:0px;
+				float:left;
+			}
+			#guide .body li
+			{
+				margin:0px 20px 10px 0px;
+				padding:0px;
+				list-style:none;
+				float:left; 
+			}
+			#guide .left
+			{
+				width: 330px;
+				margin:0px;
+				margin-right: 20px;
+				float: left;
+			}
+			#guide .left dl
+			{
+				background-color:#FD9393;
+				color:white;
+			}
+			#guide #ulleft
+			{
+				width:220px;
+				float:left;
+			}
+			#guide .middle
+			{
+				width: 350px;
+				margin-right: 20px;
+				float: left;
+			}
+			#guide .middle dl{background-color:#4AAFDD;color:white;}
+			#guide #ulmiddle{width:240px;float:left;}
+			#guide .right
+			{
+				width: 270px;
+				margin:0px;
+				padding:0px;
+				float: left;
+				overflow: hidden;
+			}
+			#guide dl
+			{
+				margin:0px auto;
+				padding:0px;
+				float:left;
+			}
+			#guide dd
+			{
+				margin:0px;
+				padding:0px;
+				position:relative;
+				left:center;
+				font-size:12px;
+				float:left;	
+			}
+			#guide img
+			{
+				margin:0px;
+				padding:0px;
+			}
+			#guide .img{margin:30px 0px 10px;}
+			#guide .grey
+			{
+				font-size: 12px;
+				color: #b0b0b0;
+			}
+			#guide .floatright
+			{
+				font-size: 12px;
+				font-weight:400;
+				float:right;
+			}

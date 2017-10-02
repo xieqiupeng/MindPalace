@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+ <head>
+  <title> 预定义值 </title>
+   <script type="text/javascript" src="jquery.min.js"></script>
+	<style type="text/css">
+		img
+		{
+			position:relative;
+		}
+	</style>
+	<script type="text/javascript">
+		function smallImg()
+		{
+			$("img").animate(
+				{
+					height:'toggle'
+				}
+			);
+		}
+	</script>
+ </head>
+
+ <body>
+  <center>
+		<img src="img/jqueryImg3.jpg" height="250px" width="150px" />
+		<br/>
+		<input type="button" value="点击隐藏和显示" onclick="smallImg()"/>
+	</center>
+ </body>
+</html>

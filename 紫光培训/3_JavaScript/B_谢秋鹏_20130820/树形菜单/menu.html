@@ -1,0 +1,95 @@
+<html>
+	<head>
+	<title> 树形菜单 </title>
+		<style type="text/css">
+			ul
+			{
+				width:200px;
+				padding:0px;
+				list-style:none;
+			}
+			li
+			{
+				width:200px;
+				height:28px;
+				line-height:28px;
+				border:1px solid white;
+				padding:0px;
+				background-color:#DCDCDC;
+				clear:left;
+			}
+			a
+			{
+				display:block;
+				padding:0px 10px;
+				color:#8D8D8D;
+				text-decoration:none;
+			}
+			a:hover
+			{
+				color:white;
+				background-color:#CE0000;
+			}
+			ul[name="subUl"]
+			{
+				display:none;
+				float:left;
+			}
+			ul[name="subUl"] li
+			{
+				font-size:12px;
+			}
+		</style>
+		<script type="text/javascript">
+			function ulBlock(i)
+			{
+				//第1个li对应的第1个ul为ul[0]。
+				document.getElementsByName("subUl")[i-1].style.display="block";
+			}
+			function ulNone(i)
+			{
+				document.getElementsByName("subUl")[i-1].style.display="none";
+			}
+		</script>
+	</head>
+
+	<body>
+		<ul>		
+			<li onmouseover="ulBlock('1')" onmouseout="ulNone('1')">
+				<a href="">站长在线</a>
+				<ul name="subUl">
+					<li><a href="">站长报道</a></li>
+					<li><a href="">好站推荐</a></li>
+					<li><a href="">站长访谈</a></li>
+				</ul>
+			</li>
+			<li onmouseover="ulBlock('2')" onmouseout="ulNone('2')">
+				<a href="">网站运营</a>
+				<ul name="subUl">
+					<li><a href="">建站经验</a></li>
+					<li><a href="">策划盈利</a></li>
+					<li><a href="">探索优化</a></li>
+					<li><a href="">网站推广</a></li>
+					<li><a href="">免费资源</a></li>
+				</ul>
+			</li>
+			<li onmouseover="ulBlock('3')" onmouseout="ulNone('3')">
+				<a href="">设计在线</a>
+				<ul name="subUl">
+					<li><a href="">酷站推荐</a></li>
+					<li><a href="">网页设计</a></li>
+					<li><a href="">WEB标准</a></li>
+					<li><a href="">设计活动</a></li>
+				</ul>
+			</li>
+			<li onmouseover="ulBlock('4')" onmouseout="ulNone('4')">
+				<a href="">网络编程</a>
+				<ul name="subUl">
+					<li><a href="">Asp编程</a></li>
+					<li><a href="">Php编程</a></li>
+					<li><a href="">.Net编程</a></li>
+				</ul>
+			</li>
+		</ul>
+	</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+		<title> 获取随机数 </title>
+		<script type="text/javascript">
+			/**
+			* 获取0~9的随机数
+			*/
+			function getDigital()
+			{
+				//定义数值变量digitalNum并赋值为0~9的随机数
+				var randomNum = Math.round(Math.random()*9);
+				//将digitalNum的值赋给id为“digital”的元素的value属性
+				document.getElementById("digital").value = randomNum;
+				return randomNum;
+			}
+			/**
+			* 获取随机小写字母
+			*/
+			function getLowerCase()
+			{
+				//定义字符串变量lowerCase并赋值为随机小写字母
+				var lowerCase = String.fromCharCode(Math.round(Math.random()*25)+97);
+				//将lowerCase的值赋给id为“lowerCase”的元素的value属性
+				document.getElementById("lowerCase").value = lowerCase;
+				return lowerCase;
+			}
+			/**
+			* 获取随机大写字母
+			*/
+			function getUpperCase()
+			{
+				//定义字符串变量upperCase并赋值为随机大写字母
+				var upperCase = String.fromCharCode(Math.round(Math.random()*25)+65);
+				//将upperCase的值赋给id为“upperCase”的元素的value属性
+				document.getElementById("upperCase").value = upperCase;
+				return upperCase;
+			}
+			/**
+			* 获取混合随机值
+			*/
+			function getMingle()
+			{ 
+				//定义数值变量tempParam并赋值为0~2的随机数
+				var tempParam = getDigital();
+				//如果tempParam的值为0，显示0~9的随机数
+				if(tempParam == 0)
+				{
+					//定义数值变量mingleTemp并赋值为0~9的随机数
+					var mingleTemp = Math.round(Math.random()*9); 
+					//将mingleTemp的值赋给id为“mingleResult”的元素的value属性
+					document.getElementById("mingleResult").value = mingleTemp;
+				}
+				//如果tempParam的值为1，显示随机大写字母
+				else if(tempParam == 1)
+				{
+					//定义数值变量mingleTemp并赋值为0~25的随机数
+					var mingleTemp = Math.round(Math.random()*25); 
+					//将转换获得的随机大写字母赋给id为“mingleResult”的元素的value属性
+					document.getElementById("mingleResult").value = String.fromCharCode(mingleTemp+65);
+				}
+				//否则，即如果tempParam的值为2，显示随机小写字母
+				else
+				{
+					//定义数值变量mingleTemp并赋值为0~25的随机数
+					var mingleTemp = Math.round(Math.random()*25); 
+					//将转换获得的随机小写字母赋给id为“mingleResult”的元素的value属性
+					document.getElementById("mingleResult").value = String.fromCharCode(mingleTemp+97);
+				}
+			}
+			/**
+			* 获取混合随机数
+			* 参数：无
+			* 返回值：整型变量
+			*/
+			function getRandom()
+			{
+				//定义数值变量tempThree并赋值为0~2的随机数
+				var tempThree = Math.round(Math.random()*2);
+				//如果tempThree的值为0，返回0~57的随机数
+				if(tempThree == 0)
+				{
+					//定义整型变量intNumber并赋值为0~57的随机数
+					var intNumber = Math.round(Math.random()*9)+48;
+					//返回intNumber
+					return intNumber;
+				}
+				//如果tempThree的值为1，返回0~90的随机数
+				else if(tempThree == 1)
+				{
+					//定义数值变量upperCase并赋值为0~90的随机数
+					var upperCase = Math.round(Math.random()*25)+65;
+					//返回upperCase
+					return upperCase;
+				}
+				//否则，即如果tempThree的值为2，返回0~122的随机数
+				else
+				{
+					//定义数值变量lowerCase并赋值为0~122的随机数
+					var lowerCase = Math.round(Math.random()*25)+97;
+					//返回lowerCase
+					return lowerCase;
+				}
+			}
+			/**
+			* 获取注册码
+			*/
+			function getRegisterCode()
+			{ 
+				//调用getRandom()获取混合随机数并定义第一个数值变量numberOne进行赋值
+				var numberOne = getRandom();
+				//调用getRandom()获取混合随机数并定义第二个数值变量numberTwo进行赋值
+				var numberTwo = getRandom();
+				//调用getRandom()获取混合随机数并定义第三个数值变量numberThree进行赋值
+				var numberThree = getRandom();
+				//调用getRandom()获取混合随机数并定义第四个数值变量numberFour进行赋值
+				var numberFour = getRandom();
+				//如果numberOne与numberTwo的和不等于numberThree与numberFour的和
+				while(numberOne + numberTwo != numberThree + numberFour)
+				{
+					//调用getRandom()获取混合随机数并赋给numberOne
+					numberOne = getRandom();
+					//调用getRandom()获取混合随机数并赋给numberTwo
+					numberTwo = getRandom();
+					//调用getRandom()获取混合随机数并赋给numberThree
+					numberThree = getRandom();
+					//调用getRandom()获取混合随机数并赋给numberFour
+					numberFour = getRandom();
+				}
+				//定义字符串变量registerCode并赋值为随机生成的注册码
+				var registerCode = String.fromCharCode(numberOne,numberTwo,numberThree,numberFour);
+				//将registerCode的值赋给id为“registerCode”的元素的value属性
+				document.getElementById("registerCode").value= registerCode;
+			}
+		</script>
+	</head>
+
+	<body>
+		<form name="random" action="#" method="post">
+			<h3>获取随机数</h3>
+			<br />
+			<input type="button" value="0~9" onclick="getDigital()" />
+			<input type="text" id="digital" /><br />
+			<input type="button" value="a~z" onclick="getLowerCase()" />
+			<input type="text" id="lowerCase"/><br />
+			<input type="button" value="A~Z" onclick="getUpperCase()" />
+			<input type="text" id="upperCase"/><br />
+			<input type="button" value="混合" onclick="getMingle()" />
+			<input type="text" id="mingleResult"/><br />
+			<input type="button" value="注册码生成器" onclick="getRegisterCode()" />
+			<input type="text" id="registerCode"/><br />
+		</form>
+	</body>
+</html>

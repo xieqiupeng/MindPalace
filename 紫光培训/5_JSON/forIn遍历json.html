@@ -1,0 +1,29 @@
+<html>
+	<head>
+	<title> forIn </title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+		<link rel=stylesheet href=".css" type="text/css">
+		<script src=".js" type="text/javascript"></script>
+		<style type="text/css"></style>
+		<script type="text/javascript">
+			var area ={
+				"userProvince":["请选择","山东","河北","江苏","湖北"],
+				"userCity":[
+					["请选择"],
+					["济南","青岛","淄博","德州","烟台","潍坊","济宁","泰安","临沂","菏泽"],
+					["石家庄","唐山","秦皇岛","邯郸","邢台","张家口","承德","廊坊","沧州","保定"],
+					["南京","苏州","无锡","常州","镇江","连云港 ","扬州","徐州","南通","盐城"],
+					["武汉","黄石","十堰","荆州","宜昌","襄樊","鄂州","荆门","孝感","黄冈"]
+				]
+			};
+			document.write("for in"+"<br/>");
+			//for in 循环不用声明变量
+			for (each in area) {
+				document.write(each + area[each]+"<br/>");
+			}
+		</script>
+	</head>
+
+	<body>
+	</body>
+</html>

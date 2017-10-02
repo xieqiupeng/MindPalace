@@ -1,0 +1,154 @@
+<html>
+	<head>
+	<title> 树形菜单 </title>
+		<script src="jquery-1.4.2.js"></script>
+		<style type="text/css">
+			ul
+			{
+				width:200px;
+				padding:0px;
+				list-style:none;
+			}
+			li
+			{
+				width:200px;
+				height:28px;
+				line-height:28px;
+				border:1px solid white;
+				padding:0px;
+				background-color:#DCDCDC;
+				clear:left;
+			}
+			a
+			{
+				display:block;
+				padding:0px 10px;
+				color:#8D8D8D;
+				text-decoration:none;
+			}
+			a:hover
+			{
+				color:white;
+				background-color:#CE0000;
+			}
+			#ul
+			{
+				display:none;
+				float:left;
+			}
+			ul[name="subUl"]
+			{
+				display:none;
+				float:left;
+			}
+			ul[name="subUl"] li
+			{
+				font-size:12px;
+			}
+		</style>
+		<script type="text/javascript">
+			function ulBlock(i)
+			{
+				//第1个li对应的第1个ul为ul[0]。
+				document.getElementsByName("subUl")[i-1].style.display="block";
+			}
+			function ulNone(i)
+			{
+				document.getElementsByName("subUl")[i-1].style.display="none";
+			}
+			function block()
+			{
+				document.getElementById("ul").style.display="block";
+			}
+			function none()
+			{
+				document.getElementById("ul").style.display="none";
+			}
+			function click()
+			{
+				//window.parent.frames["main"].img.src=imgSrc+".jpg"
+			}
+			$(document).ready(function (){
+				$("a").target="main";
+			});
+		</script>
+	</head>
+
+	<body>
+		<ul>
+			<li><a href="http://www.renren.com/280480619" target="main">个人主页</a></li>
+			<li><a href="个人简历.html" target="main">个人简历</a></li>
+			<li onmouseover="block()" onmouseout="none()">
+				<a href="">个人作业</a>
+				<ul id="ul">		
+					<li onmouseover="ulBlock('1')" onmouseout="ulNone('1')" onclick="click()">
+						<a href="" >B_谢秋鹏_20130814</a>
+						<ul name="subUl">
+							<li>
+								<a href="..\JavaScript\B_谢秋鹏_20130814\综合注册.html" target="main">
+									综合注册.html
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li onmouseover="ulBlock('2')" onmouseout="ulNone('2')">
+						<a href="">B_谢秋鹏_20130819</a>
+						<ul name="subUl">
+							<li>
+								<a href="..\JavaScript\B_谢秋鹏_20130819\动态增删table的行列.html" target="main">
+									动态增删table的行列
+								</a>
+							</li>
+							<li>
+								<a href="..\JavaScript\B_谢秋鹏_20130819\浮动框架与超链接\浮动框架与超链接.html"  target="main">
+									浮动框架与超链接
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li onmouseover="ulBlock('3')" onmouseout="ulNone('3')">
+						<a href="">B_谢秋鹏_20130806</a>
+						<ul name="subUl">
+							<li>
+								<a href="..\CSS\B_谢秋鹏_20130806\中国航母\中国航母.html" target="main">
+									中国航母
+								</a>
+							</li>
+							<li>
+								<a href="..\CSS\B_谢秋鹏_20130806\淘宝\淘宝.html" target="main">
+									淘宝
+								</a>
+							</li>
+							<li>
+								<a href="..\CSS\B_谢秋鹏_20130806\甜品\甜品.html" target="main">甜品</a>
+							</li>
+							<li>
+								<a href="..\CSS\B_谢秋鹏_20130806\旅游预订\旅游预订.html" target="main">旅游预订</a>
+							</li>
+						</ul>
+					</li>
+					<li onmouseover="ulBlock('4')" onmouseout="ulNone('4')">
+						<a href="">B_谢秋鹏_20130802</a>
+						<ul name="subUl">
+							<li>
+								<a href="..\HTML\B_谢秋鹏_20130802\百合网注册.html" target="main">
+									百合网注册
+								</a>
+							</li>
+							<li>
+								<a href="..\HTML\B_谢秋鹏_20130802\表格+边框+背景_02.html" target="main">
+									表格+边框+背景_02
+								</a>
+							</li>
+							<li>
+								<a href="..\HTML\B_谢秋鹏_20130802\MP3歌曲下载.html" target="main">
+									MP3歌曲下载
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>	
+	</body>
+</html>

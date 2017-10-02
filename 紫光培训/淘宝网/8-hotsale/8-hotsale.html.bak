@@ -1,0 +1,213 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<title> 8-hotsale </title>
+		<meta http-equiv="content-type" content="text/html; charset=GB2312"/>
+		<link rel=stylesheet href="../8-hotsale/8-hotsale.css" text="text/css">
+	</head>
+
+	<body>
+		<div id="hotsale" class="layout">
+			<div class="nav">
+				<h3>热卖单品</h3>
+					<ul>
+						<li><a title="七夕礼物" href="">七夕礼物</a></li>
+						<li><a title="连衣裙" href=>连衣裙</a></li>
+						<li><a title="针织衫" href="">针织衫</a></li>
+						<li><a title="水晶灯" href="">水晶灯</a></li>
+						<li><a title="牛仔" href="">牛仔</a></li>
+						<li><a title="瑞士表" href="">瑞士表</a></li>
+						<li><a title="遮阳伞" href="">遮阳伞</a></li>
+						<li><a title="客厅灯" href="">客厅灯</a></li>
+						<li><a title="文胸" href="">文胸</a></li>
+						<li><a title="巧克力" href="">巧克力</a></li>
+						<li><a title="短裤" href="">短裤</a></li>
+						<li><a title="雪纺裙" href="">雪纺裙</a></li>
+						<li><a title="男鞋" href="">男鞋</a></li>
+					</ul>
+					<a href=""><span class="border">更多 〉</span></a>
+			</div>
+			<div class="link">
+				<dl>
+					<dt>
+						<a href="" target="_blank">
+						<img src="../8-hotsale/8_1.jpg">
+						</a>
+					</dt>
+					<dd>
+						79元包邮文艺范开衫<br/>
+						<span class="grey">￥</span>
+						<span class="grey delete">198.00</span>
+						<span class="grey">￥</span>
+						<span class="orange">79.00</span><br/>
+						<img class="img" src="8_13.jpg">
+						月销<span class="grey">659</span>
+					</dd>
+				</dl>
+				<dl>
+					<dt>
+						<a href="" target="_blank">
+						<img src="../8-hotsale/8_2.jpg">
+						</a>
+					</dt>
+					<dd>
+						特价真皮男鞋 豆豆鞋<br/>
+						<span class="grey">￥</span>
+						<span class="grey delete">198.00</span>
+						<span class="grey">￥</span>
+						<span class="orange">79.00</span><br/>
+						月销<span class="grey">659</span>
+					</dd>
+				</dl>
+				<dl>
+					<dt>
+						<a href="" target="_blank">
+						<img src="../8-hotsale/8_3.jpg">
+						</a>
+					</dt>
+					<dd>
+						孕妇装韩版T恤<br/>
+						<span class="grey">￥</span>
+						<span class="orange">149.00</span><br/>
+						<img class="img" src="../8-hotsale/8_13.jpg">月销
+						<span class="grey">659</span>
+					</dd>
+				</dl>
+				<dl>
+					<dt>
+						<a href="" target="_blank">
+						<img src="../8-hotsale/8_4.jpg">
+						</a>
+					</dt>
+					<dd>
+						卖疯了 2013春季首发<br/>
+						<span class="grey">￥</span>
+						<span class="grey delete">198.00</span>
+						<span class="grey">￥</span>
+						<span class="orange">79.00</span><br/>
+						月销<span class="grey">659</span>
+					</dd>
+				</dl>
+				<dl>
+					<dt>
+						<a href="" target="_blank">
+						<img src="../8-hotsale/8_5.jpg">
+						</a>
+					</dt>
+					<dd>
+						产妇月子服套装 哺育<br/>
+						<span class="grey">￥</span>
+						<span class="grey delete">198.00</span>
+						<span class="grey">￥</span>
+						<span class="orange">79.00</span><br/>
+						<img class="img" src="../8-hotsale/8_13.jpg">
+						月销<span class="grey">659</span>
+					</dd>
+				</dl>
+				<dl>
+					<dt>
+						<a href="" target="_blank">
+						<img src="../8-hotsale/8_6.jpg">
+						</a>
+					</dt>
+					<dd>
+						两件包邮亲子防晒衣<br/>
+						<span class="grey">￥</span>
+						<span class="orange">55.00</span><br/>
+						月销<span class="grey">659</span>
+					</dd>
+				</dl>
+				<dl>
+					<dt>
+						<a href="" target="_blank">
+						<img src="../8-hotsale/8_7.jpg">
+						</a>
+					</dt>
+					<dd>
+						包邮儿童套装特价促销<br/>
+						<span class="grey">￥</span>
+						<span class="grey delete">198.00</span>
+						<span class="grey">￥</span>
+						<span class="orange">79.00</span><br/>
+						<img class="img" src="../8-hotsale/8_13.jpg">
+						月销<span class="grey">659</span>
+					</dd>
+				</dl>
+				<dl>
+					<dt>
+						<a href="" target="_blank">
+						<img src="../8-hotsale/8_8.jpg">
+						</a>
+					</dt>
+					<dd>
+						52元 无钢圈运动 文胸<br/>
+						<span class="grey">￥</span>
+						<span class="grey delete">198.00</span>
+						<span class="grey">￥</span>
+						<span class="orange">79.00</span><br/>
+						月销<span class="grey">659</span>
+					</dd>
+				</dl>
+				<dl>
+					<dt>
+						<a href="" target="_blank">
+						<img src="../8-hotsale/8_9.jpg">
+						</a>
+					</dt>
+					<dd>
+						韩版时尚舒适 磨砂真<br/>
+						<span class="grey">￥</span>
+						<span class="orange">73.00</span><br/>
+						月销<span class="grey">659</span>
+					</dd>
+				</dl>
+				<dl>
+					<dt>
+						<a href="" target="_blank">
+						<img src="../8-hotsale/8_10.jpg">
+						</a>
+					</dt>
+					<dd>
+						爆款！新品 纯棉可爱<br/>
+						<span class="grey">￥</span>
+						<span class="grey delete">198.00</span>
+						<span class="grey">￥</span>
+						<span class="orange">79.00</span><br/>
+						<img class="img" src="../8-hotsale/8_13.jpg">
+						月销<span class="grey">659</span>
+					</dd>
+				</dl>
+				<dl>
+					<dt>
+						<a href="" target="_blank">
+						<img src="../8-hotsale/8_11.jpg">
+						</a>
+					</dt>
+					<dd>
+						多色纯棉女童长裤<br/>
+						<span class="grey">￥</span>
+						<span class="grey delete">198.00</span>
+						<span class="grey">￥</span>
+						<span class="orange">79.00</span><br/>
+						月销<span class="grey">659</span>
+					</dd>
+				</dl>
+				<dl>
+					<dt>
+						<a href="" target="_blank">
+						<img src="../8-hotsale/8_12.jpg">
+						</a>
+					</dt>
+					<dd>
+						实在是太浪费面料了！<br/>
+						<span class="grey">￥</span>
+						<span class="grey delete">198.00</span>
+						<span class="grey">￥</span>
+						<span class="orange">79.00</span><br/>
+						月销<span class="grey">659</span>
+					</dd>
+				</dl>
+			</div>
+		</div>
+	</body>
+</html>

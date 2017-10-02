@@ -1,0 +1,24 @@
+<html>
+	<head>
+	<title> 隐藏图片 </title>
+		<script src="jquery-1.4.2.js" tyae="text/javascript"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#hide").click(function(){
+					$("img").fadeOut("slow",function(){
+						alert("haha，我走了");
+					});
+				});
+				$("#show").click(function(){
+					$("img").fadeIn("slow");
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<img src="img/坚持.jpg" width="300px"/>
+		<input type="button" value="隐藏图片" id="hide"/>
+		<input type="button" value="显示图片" id="show"/>
+	</body>
+</html>

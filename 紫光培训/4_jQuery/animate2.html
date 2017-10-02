@@ -1,0 +1,35 @@
+<html>
+	<head>
+	<title> ????ͼƬ </title>
+		<style type="text/css">
+		div
+		{
+			width:200px;
+			height:200px;
+			border:1px solid black;
+			position:relative;
+		}
+		</style>
+		<script src="jquery-1.4.2.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(document).ready(
+				function(){
+					$("div").click(function(){
+						$("div").animate({width:'+=150px',height:'+=150px'},"slow");
+					});
+				}
+				function(){
+					$("button").click(function(){
+						$("div").animate({width:'+=150px',height:'+=150px'},"slow");
+					});
+				}
+			);
+		</script>
+	</head>
+
+	<body>
+		<div></div>
+		<input type="button" value="????ͼƬ" id="hideJpg()" onclick="hideJpg()"/>
+		<input type="button" value="??ʾͼƬ" onclick="showJpg()"/>
+	</body>
+</html>

@@ -1,0 +1,52 @@
+/* 全局变量 */
+			.layout
+			{
+				width: 1000px;
+				margin: 10px 174.5px;;
+			}
+			.fright{float:right;}
+/* 全局变量 */
+			#footwrap
+			{
+				width:1040px;
+				border:0px solid black;
+				font-size:12px;
+				clear:both;
+			}
+			#footwrap ul
+			{
+				border:0px solid black;
+				width:1040px;
+				height:37px;
+				margin:0px;
+				padding:0px;
+				list-style:none;
+				border-collapse:collapse;
+			}
+			#footwrap li
+			{
+				border:0px solid #C8C8C6;
+				border-right:1px solid #C8C8C6;;
+				height:15px;
+				margin:10px;
+				margin-left:0px;
+				margin-right:0px;
+				padding:0px;
+				padding-left:10px;
+				padding-right:10px;
+				float:left;
+			}
+			#footwrap .ul1
+			{
+				height:50px;
+				border:0px solid blue;
+				border-top:2px solid orange;
+				border-bottom:1px solid #C8C8C6;
+			}
+			#footwrap .li1
+			{
+				margin:15px;
+				margin-left:0px;
+				margin-right:0px;
+			}
+			#footwrap .grey{color:#C8C8C6;}

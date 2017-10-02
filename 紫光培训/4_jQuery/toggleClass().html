@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+ <head>
+  <title> toggleClass </title>
+  <script type="text/javascript" src="jquery.min.js"></script>
+  <script type="text/javascript">
+	function appendContent()
+	{
+		$("p").toggleClass("pClass");
+	}
+  </script>
+  <style type="text/css">
+	.pClass
+	{
+		color:blue;
+		font-weight:900;
+	}
+  </style>
+ </head>
+
+ <body>
+  <p>
+	这是个p标签，使用toggleClass方法加载css样式！
+  </p>
+  <br/>
+  <input type="button" value="执行toggleClass方法" onclick="appendContent()"/>
+ </body>
+</html>

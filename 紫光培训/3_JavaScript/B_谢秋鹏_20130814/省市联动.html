@@ -1,0 +1,49 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<title> 省市联动 </title>
+		<script src="综合注册.js"></script>
+		<script type="text/javascript">
+		//省市联动
+			var userProvince=["河南","河北","江苏","贵州"];
+			var userCity=[["郑州","开封"],["唐山","保定"],["南京","无锡"],["贵阳","遵义"]];
+			function addProvinceOption(id)
+			{
+				var objProvince=document.getElementById(id);
+				for (var i=0;i<userProvince.length;i++)
+				{
+					var opt= new Option();
+					opt.text=userProvince[i];
+					opt.value=userProvince[i];
+					objProvince.options.add(opt);
+				}
+			}
+			function addCityOption(id)
+			{
+				var ci=checkProvince(id);
+				var objCity=document.getElementById("city");
+				objCity.length="";
+				for (var i=0;i<userCity[ci].length;i++)//长度是userCity[]的长度
+				{
+					var opt= new Option();
+					opt.text=userCity[ci][i];
+					opt.value=userCity[ci][i];
+					objCity.options.add(opt);
+				}
+			}
+			function checkProvince(id)
+			{
+				var province=document.getElementById("province");//select的value值
+				var position=province.selectedIndex;
+				return position;
+			}
+			</script>
+	</head>
+
+	<body onload="addProvinceOption('province'),addCityOption('city')">
+		<form>
+			<select id="province" onchange="addCityOption(id)"></select>省
+			<select id="city"></select>市
+		</form>
+	</body>
+</html>

@@ -1,0 +1,18 @@
+servlet£º
+	public void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+
+		response.setContentType("text/html");
+
+		String showword=request.getParameter("showword");
+		System.out.println(showword);
+
+		request.setAttribute("word",showword);
+		RequestDispatcher rd=getServletContext().getRequestDispatcher("/MyJsp.jsp");
+		rd.forward(request, response);
+
+	}
+
+Ìø×ªjsp£º
+
+<%String str=(String)request.getAttribute("word");%>

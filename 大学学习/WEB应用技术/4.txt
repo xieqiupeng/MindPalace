@@ -1,0 +1,17 @@
+^(([a-z]|[A-Z])+([\w]){6,15})
+
+    protected void CustomValidator1_ServerValidate(object source, ServerValidateEventArgs args)
+    {
+       string s = TextBox6.Text.Trim();
+       if (s.Length == 18)
+       {
+           if ((Int32.Parse(s.Substring(16, 1)) % 2)==0)
+           {    
+               RadioButton2.Checked=true;          
+           }
+           else
+           {
+               RadioButton1.Checked = true;
+           }
+       }
+    }

@@ -1,0 +1,114 @@
+-- 获取系统时间 
+print getdate() 
+-- 获取3天前的时间 
+print dateadd(day, -3 , getdate()) 
+-- 获取3天后的时间 
+print dateadd(day, 3 , getdate()) 
+-- 获取3年前的时间 
+print dateadd(year, -3 , getdate()) 
+-- 获取3年后的时间 
+print dateadd(year, 3 , getdate()) 
+-- 获取3月后的时间 
+print dateadd(month, 3 , getdate()) 
+-- 获取9小时后的时间 
+print dateadd(hour, 9 , getdate()) 
+-- 获取9分钟后的时间 
+print dateadd(minute, 9 , getdate()) 
+-- 获取指定时间之间相隔多少年 
+print datediff(year, '2005-01-01', '2008-01-01') 
+-- 获取指定时间之间相隔多少月 
+print datediff(month, '2005-01-01', '2008-01-01') 
+-- 获取指定时间之间相隔多少天 
+print datediff(day, '2005-01-01', '2008-01-01') 
+-- 获取指定时间的特定部分 
+print year(getdate()) 
+print month(getdate()) 
+print day(getdate()) 
+-- 获取指定时间的特定部分 
+print datepart(year, getdate()) 
+print datepart(month, getdate()) 
+print datepart(day, getdate()) 
+print datepart(hh, getdate()) 
+print datepart(mi, getdate()) 
+print datepart(ss, getdate()) 
+print datepart(ms, getdate()) 
+-- 获取指定时间的间隔部分 
+-- 返回跨两个指定日期的日期和时间边界数 
+print datediff(year, '2001-01-01', '2008-08-08') 
+print datediff(month, '2001-01-01', '2008-08-08') 
+print datediff(day, '2001-01-01', '2008-08-08') 
+print datediff(hour, '2001-01-01', '2008-08-08') 
+print datediff(mi, '2001-01-01', '2008-08-08') 
+print datediff(ss, '2001-01-01', '2008-08-08') 
+-- 在向指定日期加上一段时间的基础上，返回新的 datetime 值 
+print dateadd(year, 5, getdate()) 
+print dateadd(month, 5, getdate()) 
+print dateadd(day, 5, getdate()) 
+print dateadd(hour, 5, getdate()) 
+print dateadd(mi, 5, getdate()) 
+print dateadd(ss, 5, getdate()) 
+-- 获取给定字符串的长度 
+print len('abcdef') 
+-- 大小写转换 
+print lower('ABCDEF') 
+print upper('abcdef') 
+-- 去空格 
+print ltrim('    abcd  dfd  df  ') 
+print rtrim('    abcd  dfd  df  ') 
+
+
+CREATE TABLE [dbo].[Student](
+	[SID] [nchar](10) COLLATE Chinese_PRC_CI_AS NOT NULL,
+	[SName] [nvarchar](50) COLLATE Chinese_PRC_CI_AS NULL,
+	[SSex] [nchar](2) COLLATE Chinese_PRC_CI_AS NULL,
+	[DBirthday] [datetime] NULL,
+	[SClass] [nchar](4) COLLATE Chinese_PRC_CI_AS NULL,
+	[SMID] [nchar](10) COLLATE Chinese_PRC_CI_AS NULL,
+ CONSTRAINT [PK_Student] PRIMARY KEY CLUSTERED 
+(
+	[SID] ASC
+)WITH (IGNORE_DUP_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+CREATE TABLE [dbo].[Advisior](
+	[AID] [nchar](10) COLLATE Chinese_PRC_CI_AS NOT NULL,
+	[AName] [nvarchar](50) COLLATE Chinese_PRC_CI_AS NULL,
+	[SSex] [nchar](2) COLLATE Chinese_PRC_CI_AS NULL,
+	[SAge] [int] NULL,
+	[STitle] [nchar](10) COLLATE Chinese_PRC_CI_AS NULL,
+ CONSTRAINT [PK_Advisior] PRIMARY KEY CLUSTERED 
+(
+	[AID] ASC
+)WITH (IGNORE_DUP_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+CREATE TABLE [dbo].[Project](
+	[PID] [nchar](10) COLLATE Chinese_PRC_CI_AS NOT NULL,
+	[PName] [nchar](10) COLLATE Chinese_PRC_CI_AS NULL,
+	[AID] [nchar](10) COLLATE Chinese_PRC_CI_AS NULL,
+	[PTask] [text] COLLATE Chinese_PRC_CI_AS NULL,
+	[PSDate] [datetime] NULL,
+	[PEDate] [datetime] NULL,
+ CONSTRAINT [PK_Project] PRIMARY KEY CLUSTERED 
+(
+	[PID] ASC
+)WITH (IGNORE_DUP_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+GO
+
+CREATE TABLE [dbo].[SP](
+	[SID] [nchar](10) COLLATE Chinese_PRC_CI_AS NOT NULL,
+	[PID] [nchar](10) COLLATE Chinese_PRC_CI_AS NOT NULL,
+	[FScore] [float] NULL,
+    PRIMARY KEY (SID,PID)
+) ON [PRIMARY]
+
+ALTER TABLE [dbo].[SP]  WITH CHECK ADD  CONSTRAINT [FK_SP_Project] FOREIGN KEY([PID])
+REFERENCES [dbo].[Project] ([PID])
+GO
+ALTER TABLE [dbo].[SP]  WITH CHECK ADD  CONSTRAINT [FK_SP_Student] FOREIGN KEY([SID])
+REFERENCES [dbo].[Student] ([SID])

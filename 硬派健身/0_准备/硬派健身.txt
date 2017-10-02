@@ -1,0 +1,26 @@
+地址：
+北京市朝阳区soho现代城1号楼804房间
+
+邮箱：
+http://exmail.qq.com/login
+xieqiupeng@toughwo.com
+Password01!
+邮箱团队：
+gotor2071
+aptx4869
+
+sourceId：
+xieqiupeng@gmail.com
+Aihaibara4869
+
+wifi：
+Toughwo_fast wifi密码
+[Toughwo01!]
+
+云梯：
+
+vs online
+https://toughwo.visualstudio.com/DefaultCollection/ToughWo.Android
+
+sourcetree 克隆地址
+https://toughwo.visualstudio.com/DefaultCollection/_git/ToughWo.Android
