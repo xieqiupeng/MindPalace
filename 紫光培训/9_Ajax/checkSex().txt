@@ -1,0 +1,15 @@
+		function checkSex()
+		{
+			var checkObj = document.getElementsByName("studentSex");
+		'<% 	if(studentVo.getStudentSex().equals("Å®"))
+			{
+		%>'
+				checkObj[1].checked = "checked";
+		'<% 	}
+			else if(studentVo.getStudentSex().equals("ÄÐ"))
+			{
+		%>'
+				checkObj[0].checked = "checked";
+		'<% 	}
+		%>'
+		}

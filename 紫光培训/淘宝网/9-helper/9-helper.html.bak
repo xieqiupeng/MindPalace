@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<title> 9-helper </title>
+		<meta http-equiv="content-type" content="text/html; charset=GB2312"/>
+		<link rel=stylesheet href="../9-helper/9-helper.css" text="text/css">		
+	</head>
+
+	<body>
+			<div class="layout">
+				<img src="../9-helper/9_1.jpg">
+				<img src="../9-helper/9_2.jpg">
+			</div>
+			<div id="helper" class="layout">
+				<div class="col1">
+					<h2>消费者保障</h2>
+					<ul>
+						<li>保障范围</li>
+						<li>退货退款流程</li>
+						<li>我要发起维权</li>
+						<li>更多特色服务</li>
+						<li>服务中心</li>
+					</ul>	
+				</div>
+				<div class="col2">
+					<h2>新手上路</h2>
+					<ul>
+						<li>新手专区</li>
+						<li>交易安全</li>
+						<li>消费警示</li>
+						<li>新手注册</li>
+						<li>新手学堂</li>
+						<li>24小时在线帮助</li>
+					</ul>
+				</div>
+				<div>
+					<h2>付款方式</h2>
+					<ul>
+						<li>支付宝快捷支付</li>
+						<li>支付宝余额付款</li>
+						<li>支付宝卡（现金）付款</li>
+						<li>货到付款</li>
+						<li>新人支付</li>
+					</ul>
+				</div>
+				<div>
+					<h2>淘宝特色</h2>
+					<ul>	
+						<li>淘公仔</li>
+						<li>手机淘宝</li>
+						<li>淘宝指数</li>
+						<li>旺信</li>
+					</ul>	
+				</div>
+				<a class="consumer" href="">
+					<img src="../9-helper/9_3.jpg">
+				</a>
+			</div>
+	</body>
+</html>

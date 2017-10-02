@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title> ¶ÔÁª²Ëµ¥ </title>
+		<style type="text/css">
+		#lovexin12,#lovexin14
+		{
+			width:90px;
+			height:230px;
+			background-color:#ededed;
+			border:1px solid #ddd;
+		}
+		html,body
+		{
+			height:1203px;
+		}
+		#mm
+		{
+			height:1000px;
+		}
+		</style>
+
+		<script language="JavaScript" type="text/javascript">
+			lastScrollY=0;
+			function heartBeat()
+			{ 
+				var diffY;
+				if (document.documentElement && document.documentElement.scrollTop)
+				{
+					diffY = document.documentElement.scrollTop;
+				}
+				else if (document.body)
+				{
+					diffY = document.body.scrollTop;
+				}
+				else
+				{
+					/*Netscape stuff*/
+				}
+				percent=.1*(diffY-lastScrollY); 
+				if(percent>0)
+				{percent=Math.ceil(percent);} 
+				else {percent=Math.floor(percent);} 
+				document.getElementById("lovexin12").style.top=parseInt(document.getElementById
+				("lovexin12").style.top)+percent+"px";
+				document.getElementById("lovexin14").style.top=parseInt(document.getElementById
+				("lovexin12").style.top)+percent+"px";
+				lastScrollY=lastScrollY+percent; 
+			}
+			suspendcode12="<DIV id=\"lovexin12\" style='left:2px;POSITION:absolute;TOP:120px;'>ad1</div>"
+			suspendcode14="<DIV id=\"lovexin14\" style='right:2px;POSITION:absolute;TOP:120px;'>ad2</div>"
+			document.write(suspendcode12); 
+			document.write(suspendcode14); 
+			window.setInterval("heartBeat()",1);
+		</script>
+	</head>
+
+	<body>
+		<div id="mm"></div>
+	</body>
+</html>

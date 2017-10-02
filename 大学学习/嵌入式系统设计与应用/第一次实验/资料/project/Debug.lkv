@@ -1,0 +1,6 @@
+-z -c -heap0x400 -o"./Debug/volume.out" -stack0x400 -x -i"c:/ti/c6000/bios/lib" -i"c:/ti/c6000/rtdx/lib" -i"c:/ti/c6000/xdais/lib" -i"c:/ti/c6000/cgtools/lib"
+"E:\DSPshiyan\shiyan1\Debug\load.obj"
+"E:\DSPshiyan\shiyan1\Debug\vectors.obj"
+"E:\DSPshiyan\shiyan1\Debug\volume.obj"
+"C:\ti\c6000\cgtools\lib\rts6200.lib"
+"E:\DSPshiyan\shiyan1\volume.cmd"

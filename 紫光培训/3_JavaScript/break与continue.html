@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<title> New Document </title>
+		<script type="text/javascript">
+			function printText()
+			{
+				for (i=0;i<10;i++)
+				{
+					alert(i);
+					break;//退出本层循环
+				}
+			}
+			function printText2()
+			{
+				for (i=0;i<10;i++)
+				{
+					alert(i);
+					continue;//退出此次循环
+					alert("wrong");
+				}
+			}
+		</script>
+	</head>
+
+	<body onload="printText()">
+	</body>
+</html>

@@ -1,0 +1,6 @@
+1 	sdcard路径：/mnt/sdcard/
+2 	/在linux中代表根目录，linux中没有windows中的盘符一说，sdcard在linux中只是挂载的一个文件夹而已。
+	如果没有挂载sdcard则这个文件夹下无内容，反之，则可以读取到sdcard中的文件。
+3 	/data/app/是应用安装的位置
+4 	/data/data/是存储应用数据的位置
+5 	/system/app/是系统应用存储位置，如果root以后某些不用的软件可以直接用文件管理器再这个路径下删除即可。

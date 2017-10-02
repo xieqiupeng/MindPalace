@@ -1,0 +1,29 @@
+请问哪个不是FileOutStream类的构造方法?
+FileOutStream(String path, boolean b) 
+FileOutStream(boolean b) 
+FileOutStream() 
+FileOutStream(File file)
+
+请问哪个不是定义在java.io包中的抽象类？
+InputStream 
+PrintStream 
+Reader 
+FileOutputStream 
+
+请问下列哪种描述是正确的？
+InputStream和OutputStream基于字节流。
+Reader和Writer是基于字符流的。
+ObjectInputStream和ObjectOutputStream是不支持序列化对象的。
+Reader和Writer是支持对象序列化的。
+
+下列属于文件输入输出类的是（）
+FileInputStream和FileOutputStream 
+BufferInputStream和BufferOutputStream
+PipedInputStream和PipedOutputStream 
+以上都是
+
+下列叙述中，正确的是()
+Reader是一个读取字符文件的接口
+Reader是读取数据文件的抽象类
+Reader是一个读取字符文件的抽象类
+Reader是读取字节文件的一般类

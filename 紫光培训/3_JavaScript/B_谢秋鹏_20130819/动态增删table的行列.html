@@ -1,0 +1,85 @@
+<html>
+	<head>
+	<title> 动态增删table的行列 </title>
+		<meta http-equiv="content-type" content="text/html; charset=GB2312"/>
+		<link rel=stylesheet href=".css" type="text/css">
+		<script src=".js"></script>
+		<style type="text/css">
+			table
+			{
+				border:2px solid black;
+			}
+			td
+			{
+				border:1px solid black;
+			}
+		</style>
+		<script type="text/javascript">
+			function deleteTr(element)//传入input元素
+			{
+				var rowPosition=element.parentNode.parentNode.rowIndex;//input的父节点td的父节点tr
+				var tableObj= document.getElementById("tableId");
+				tableObj.deleteRow(rowPosition);
+			}
+			function addTr()
+			{
+				var tableObj= document.getElementById("tableId");
+				var newRow= tableObj.insertRow(tableObj.rows.length-1);//插入一行
+				for (i=0; i<tableObj.rows[0].cells.length; i++)
+				{
+					var newCell= newRow.insertCell(i);
+					if (i==0||i==1)
+					{
+						var content= document.getElementsByName("text")[i].value;
+						newCell.innerHTML=content;	
+					}
+					else if (i==2)
+					{
+						var content= document.getElementById("select").value;
+						newCell.innerHTML= content;
+					}
+					else
+					{
+						//delIndex= document.getElementsByName("delete")[i+1].value;
+						newCell.innerHTML= "<input type='button' value='delete' name='delete' onclick='deleteTr(this)'>";
+						//"+i+"
+						/*
+						*var inputDel= document.createElement("input");
+						*var buttonDel= document.createAttribute("type","value");
+						*buttonDel= document.setAttribute("type","button");
+						*buttonDel= document.setAttribute("value","delete");
+						*newCell.appendChild(buttonDel);
+						*/
+					}
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<table id="tableId">
+			<tr><td>姓名</td><td>年龄</td><td>性别</td><td>操作</td></tr>
+			<tr><td>李涛</td><td>24</td><td>男</td>
+				<td>
+					<input type="button" value="delete" name="delete" onclick="deleteTr(this)"/>
+				</td>
+			</tr>
+			<tr><td>李伟</td><td>25</td><td>男</td>
+				<td>
+					<input type="button" value="delete" name="delete" onclick="deleteTr(this)"/>
+				</td>
+			</tr>
+			<tr>
+				<td><input type="text" name="text" value="谢秋鹏"/></td>
+				<td><input type="text" name="text" value="21"/></td>
+				<td>
+					<select id="select">
+						<option value="男">男</option>
+						<option value="女">女</option>
+					</select>
+				</td>
+				<td><input type="button" value="add" onclick="addTr()"/></td>
+			</tr>
+		</table>
+	</body>
+</html>

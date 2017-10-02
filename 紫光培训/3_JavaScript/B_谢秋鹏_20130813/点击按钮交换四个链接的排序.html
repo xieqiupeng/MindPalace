@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<title> 点击按钮交换四个链接的排序 </title>
+		<script type="text/javascript">
+			function order()
+			{
+				var innerHTML=document.anchors[0].innerHTML;
+				var href=document.anchors[0].href;
+				for(var i=0;i<3;i++)
+				{
+					document.anchors[i].innerHTML=document.anchors[i+1].innerHTML;
+					document.anchors[i].href=document.anchors[i+1].href;
+				}
+				document.anchors[3].innerHTML=innerHTML;
+				document.anchors[3].href=href;
+			}
+		</script>
+	</head>
+
+	<body>
+		<a href="http://www.163.com" name="" target="">163</a><br/>
+		<a href="http://www.baidu.com" name="" target="">baidu</a><br/>
+		<a href="http://www.sina.com" name="" target="">sina</a><br/>
+		<a href="http://www.yahoo.com" name="" target="">yahoo</a><br/>
+		<input type="button" value="change" Onclick="order()"/>
+	</body>
+</html>

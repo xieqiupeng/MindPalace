@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<title> 如何容器透明，内容不透明 </title>
+		<style type="text/css">
+			body{
+				font-size:10px;
+				background:yellow;
+			}
+			p{
+				font:12px; 
+				color:black;
+			}
+			#unopacity{
+				font-color:black;
+			}
+
+			.outer{
+				width:200px;height:200px;
+				background:#000;
+				filter:alpha(opacity=20);
+				opacity:.2;}
+			.inner{
+				width:200px;height:200px;
+				margin-top:-200px;
+			}
+
+			.outer2{
+				width:200px;height:200px;
+				background:rgba(0,0,0,.2);
+				background:#000\9;
+				filter:alpha(opacity=20)\9;
+				position:relative\9;
+			}
+			.inner2{
+				position:relative\9;
+			}
+
+		</style>
+	</head>
+	
+	<body>
+	透明：
+		<div class="outer">
+			<div id = "unopacity">我是透明的内容</div>
+		</div>
+	
+	高级浏览器：
+	直接使用rgba颜色值实现；IE浏览器在定义容器透明的同时，让子节点相对定位，也可达到效果
+		<div class="outer2">
+			<div class="inner2">我是不透明的内容</div>
+		</div>
+			
+	低级浏览器：
+	原理是容器层与内容层并级，容器层设置透明度，内容层通过负margin或者position绝对定位等方式覆盖到容器层上
+		<div class="outer"></div>
+		<div class="inner">我是不透明的内容</div>
+
+	</body>
+</html>

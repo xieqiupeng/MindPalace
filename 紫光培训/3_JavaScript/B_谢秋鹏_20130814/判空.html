@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<title> checkNull </title>
+		<script type="text/javascript"> 
+		/*有很多方法，最简单的一种是在input中插入内容，直接检验。
+		* 为空的话在后边插入一行文字，输出结果。
+		* 两点技巧，
+		* 1.插入空节点span。
+		* 2.id设为中文，同时可作为输出结果。
+		*/
+		//判空
+			function checkNull(textId)
+			{
+				var content=document.getElementById(textId);
+				if(content.value ==="")
+				{
+					content.nextSibling.innerHTML =textId+"不能为空";
+					return true;
+				}
+				else
+				{
+					content.nextSibling.innerHTML ="√";
+					return false;
+				}
+			}
+		//判等
+			function checkEqual()
+			{
+				var confirmPwd=document.getElementById("确认密码");
+				var Pwd=document.getElementById("密码");
+				if (confirmPwd.value !==Pwd.value)
+				{
+					confirmPwd.nextSibling.innerHTML ="两次输入的密码不一致";
+				}
+				else
+				{
+					confirmPwd.nextSibling.innerHTML ="√";
+				}
+			}
+		//判等条件
+			function checkNullAndEqual(textId)
+			{
+				checkNull(textId);
+				if (checkNull(textId) ===false)
+				{
+					checkEqual();
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		用户名：
+		<input type="text" id="用户名" onblur="checkNull(id)"/><span></span>
+		<br/>
+		密码：
+		<input type="text" id="密码" onblur="checkNull(id)"/><span></span>
+		<br/>
+		确认密码：
+		<input type="text" id="确认密码" onblur="checkNullAndEqual(id)"/><span></span>
+		<br/>
+	</body>
+</html>

@@ -1,0 +1,68 @@
+/*2-search*/
+	#search
+	{
+		width: 1000px;
+		height:100px;
+	}
+	#search .left
+	{
+		width:330px;
+		height:100px;
+		float: left;
+	}
+	#search .right
+	{
+		width:670px;
+		height:100px;
+		float: left;
+	}
+	#search .top
+	{
+		vertical-align:top;
+	}
+	#search .middle
+	{
+		height:35px;
+		line-height:35px;
+	}
+	#search input[type="text"]
+	{
+		border:2px solid #F07C05;
+		height:35px;
+		width:440px;
+		background-image: url(search.png);
+		background-repeat: no-repeat;
+		background-position: left center;
+		padding-left: 20px;
+	}
+	.top input
+	{
+		position:relative;
+		top:8px;
+	}
+	.top a
+	{
+		margin:0 10px;
+	}
+	.middle input 
+	{
+		float:left;
+		position:relative;
+		color:#BBBBBB;
+	}
+	#prosearch
+	{
+		width:70px;
+		height:20px;
+		line-height:20px;
+		float:left;
+		padding-left:15px;
+		color:black;
+	}
+	.bottom
+	{
+		height:40px;
+		line-height:40px;
+		word-spacing:8px;
+	}
+	span{color: #EB760C;}

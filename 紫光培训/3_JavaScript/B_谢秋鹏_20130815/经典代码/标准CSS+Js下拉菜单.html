@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CSS下拉菜单</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<script type="text/javascript">
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i];
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+					this.className=this.className.replace(" over", "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+</script>
+<style type="text/css">
+body{
+text-align: center;
+font-size:12px;
+}
+#popimg{
+WIDTH:770px;
+margin:0 auto;
+text-align:center;
+}
+#popimg2{
+WIDTH:770px;
+margin:0 auto;
+text-align:center;
+z-index:-1;
+}
+ul { 
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+li {
+	position:relative;
+	float: left;	
+	width: 110px;	
+}
+li ul { 
+	position:absolute;
+	display: none;
+	top: 20px;left:0;
+}
+li:hover ul, li.over ul {
+	display: block;
+}
+ul li a{
+	display:block;
+	font-size:12px;
+	border: 1px solid #ccc;
+	padding:3px;
+	margin-right:1px;
+	text-decoration: none;
+	color: #777;background:#eee;
+}
+ul li a:hover{
+	background-color:#f4f4f4;
+}
+#test{
+	clear:both;
+	background-color:#999999;
+	width:769px;
+	height:100px;
+	margin:0 auto;
+}
+</style>
+</head>
+<body>
+<div id="popimg">
+<ul id="nav">
+  <li><a href="">图形图像</a>
+    <ul>
+       <li><a href="/sort/list_11_203_1.shtml">Ajax/JavaScript</a></li><li><a href="/sort/list_11_83_1.shtml">ExtJS</a></li><li><a href="/sort/list_11_112_1.shtml">jQuery</a></li>
+	</ul>
+  </li>
+  <li><a href="">参考</a>
+    <ul>
+      <li><a href="/sort/list_8_165_1.shtml">多媒体技术</a></li><li><a href="/sort/list_8_162_1.shtml">控件相关</a></li><li><a href="/sort/list_8_160_1.shtml">图形处理</a></li>
+    </ul>
+  </li>
+  <li><a href="">Ajax</a>
+    <ul>
+      <li><a href="/sort/list_11_168_1.shtml">CSS特效</a></li><li><a href="/sort/list_11_96_1.shtml">HTML</a></li><li><a href="/sort/list_11_202_1.shtml">在线编辑器</a></li>
+    </ul>
+  </li>
+    <li><a href="">教程类</a>
+    <ul>
+      <li><a href="/sort/list_8_165_1.shtml">多媒体技术</a></li><li><a href="/sort/list_8_162_1.shtml">控件相关</a></li><li><a href="/sort/list_8_160_1.shtml">图形处理</a></li>
+</ul>
+  </li>
+  <li><a href="">参考</a>
+    <ul>
+      <li><a href="/sort/list_11_203_1.shtml">Ajax/JavaScript</a></li><li><a href="/sort/list_11_83_1.shtml">ExtJS</a></li><li><a href="/sort/list_11_112_1.shtml">jQuery</a></li>
+    </ul>
+  </li>
+  <li><a href="">VB源代码</a>
+    <ul>
+<li><a href="/sort/list_8_165_1.shtml">多媒体技术</a></li><li><a href="/sort/list_8_162_1.shtml">控件相关</a></li><li><a href="/sort/list_8_160_1.shtml">图形处理</a></li>
+    </ul>
+  </li>
+  <li><a href="">VC++</a>
+    <ul><li><a href="/sort/list_8_163_1.shtml">界面编程</a></li><li><a href="/sort/list_8_161_1.shtml">数据库应用</a></li><li><a href="/sort/list_8_166_1.shtml">报表打印</a></li>
+    </ul>
+  </li>
+</ul>
+</div>
+<div id="popimg2">
+  <div id="test"></div>
+</div>
+</body>
+</html>

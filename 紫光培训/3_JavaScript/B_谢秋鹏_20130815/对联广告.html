@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title> ¶ÔÁª²Ëµ¥ </title>
+		<style type="text/css">
+		#adLeft,#adRight
+		{
+			width:90px;
+			height:230px;
+			background-color:#ededed;
+			border:1px solid #ddd;
+		}
+		body
+		{
+			height:1000px;
+		}
+		</style>
+
+		<script language="JavaScript" type="text/javascript">
+			lastScrollY=0;
+			function advertisement()
+			{
+				var diffY;
+				if (document.documentElement && document.documentElement.scrollTop)
+				{
+					diffY = document.documentElement.scrollTop;
+				}
+				else if (document.body)
+				{
+					diffY = document.body.scrollTop;
+				}
+				percent=diffY-lastScrollY; 
+				if(percent>0)
+				{
+					percent=Math.ceil(percent);
+				} 
+				var topLeft=document.getElementById("adLeft").style.top;
+				document.getElementById("adLeft").style.top=parseInt(topLeft)+percent+"px";
+				var topRight=document.getElementById("adRight").style.top;
+				document.getElementById("adRight").style.top=parseInt(topRight)+percent+"px";
+				lastScrollY=lastScrollY+percent; 
+			}
+			adLeftCode =
+			"<DIV id=\"adLeft\" style='left:2px;POSITION:absolute;TOP:120px;'>ad1</div>"
+			adRightCode =
+			"<DIV id=\"adRight\" style='right:2px;POSITION:absolute;TOP:120px;'>ad2</div>"
+			document.write(adLeftCode); 
+			document.write(adRightCode); 
+			window.setInterval("advertisement()",1);
+		</script>
+	</head>
+
+	<body>
+	</body>
+</html>

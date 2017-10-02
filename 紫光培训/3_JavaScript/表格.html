@@ -1,0 +1,50 @@
+<html>
+	<head>
+	<title> 空模版 </title>
+		<link rel=stylesheet href=".css" type="text/css">
+		<script src=".js"></script>
+		<style type="text/css">
+			table{border:2px solid black;}
+			td{border:1px solid black;}
+		</style>
+		<script type="text/javascript">
+			function draw()
+			{
+				var tableObj= document.getElementById("tableId");
+				var rowArr= tableObj.rows;
+				for (i=0; i<rowArr.length; i++)
+				{
+					if ((i%2)>0)
+					{
+					 rowArr[i].style.background="#EEE";
+					}
+					else
+					{
+					 rowArr[i].style.background="#CCC";
+					}
+				}
+			}
+			function addTr()
+			{
+				var tableObj=document.getElementById("tableId");
+				var newRow=tableObj.insertRow(tableObj.rows.length);//插入一行
+				for (i=0; i<tableObj.rows[0].cells.length; i++)
+				{
+					var newCell=newRow.insertCell(i);//插入单元格
+					newCell.innerHTML="new";
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<table id="tableId">
+			<tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+			<tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+			<tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+			<tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+		</table>
+		<input type="button" value="draw" onclick="draw()"/>
+		<input type="button" value="addTr" onclick="addTr()"/>
+	</body>
+</html>

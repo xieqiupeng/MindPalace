@@ -1,0 +1,15 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<title> 三级联动 </title>
+		<script src="LinkedDays.js"></script>
+	</head>
+
+	<body onload="addYear(),addMonth(),addDay()">
+		<form>
+			<select id="year" onchange="addDay()"></select>
+			<select id="month" onchange="addDay()"></select>
+			<select id="day"></select>
+		</form>
+	</body>
+</html>

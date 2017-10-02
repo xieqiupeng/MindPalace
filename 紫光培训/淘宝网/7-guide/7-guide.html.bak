@@ -1,0 +1,262 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<title> 7-guide </title>
+		<link rel=stylesheet href="../7-guide/7-guide.css" text="text/css">
+	</head>
+
+	<body>
+		<div id="guide" class="layout">
+			<div class="nav">
+				<h3>淘宝带你逛</h3>
+				<ul>
+					<li class="grey">图片互动:</li>
+					<li>顽兔</li>
+					<li>淘女郎</li>
+					<li>乐活＋</li>
+					<li class="grey">生活窍门:</li>
+					<li>服饰</li>
+					<li>美容</li>
+					<li>家居</li>
+					<li>母婴</li>
+					<li>时尚</li>
+					<li>数码</li>
+					<li>女人</li>
+					<li class="grey">主题市场:</li>
+					<li>明星开店</li>
+					<li>促销汇</li>
+					<li>清仓</li>
+					<li>风尚台</li>
+					<li>逛周边</li>
+				</ul>
+			</div>
+
+			<div class="body">
+				<div class="left">
+					<div>
+						<h4>顽兔社区</h4>
+						<dl>
+							<dt><img src="../7-guide/7_1.jpg"/></dt>
+							<dd></dd>
+						</dl>
+						<dl>
+							<dt><img src="../7-guide/7_2.jpg"/></dt>
+							<dd>他们竟然同年龄</dd>
+						</dl>
+						<dl>
+							<dt><img src="../7-guide/7_3.jpg"/></dt>
+							<dd>挤挤睡更暖和</dd>
+						</dl>
+					</div>
+					<ul>
+						<li>[春装] 小脚裤＋单鞋 显瘦</li>
+						<li>[明星] 我是歌手老人揭秘</li>
+						<li>[家装] 35平1室0厅小蜗居</li>
+						<li>[动态] 我收藏店铺的优惠</li>
+					</ul>
+					<div>
+						<h4>淘女郎·搭配购</h4>
+						<dl>
+							<dt><img src="../7-guide/7_4.jpg"/></dt>
+							<dd>50款气质雪纺裙</dd>
+						</dl>
+						<ul id="ulleft">
+							<li><span class="h">超气质春款小西装 碎花裙+蕾丝短裤</span></li>
+							<li>[春装] 百摺短褚40款 超显气场春搭</li>
+							<li>[雪纺] 显嫩春搭50款 春款百搭衬衫</li>
+							<li>[包包] 备丝衫+裙裤 连衣褚＋雪纺</li>
+							<li>[开衫] [早春搭] [纱裙] [气质搭]</li>
+						<ul>
+					</div>
+					<div>
+						<h4>攻略，乐活＋</h4>
+						<dl>
+							<dt><img src="../7-guide/7_5.jpg"/></dt>
+							<dd>教你折毛爷爷</dd></dl>
+						<ul id="ulleft">
+							<li>[长尾夹]功能强大花防的暴强制作</li>
+							<li>[瘦身]胡胡的家常菜鱼同学小厨房</li>
+							<li>[动漫]勾男生6绝招当女人吵架后</li>
+							<li>[搞笑]看一眼笑一天这就是女人啊</li>
+							<li>[DIY][瘦身菜][夺真爱][有点色]</li>
+						</ul>
+					</div>
+					<div>
+						<h4>爱逛街·宝贝</h4>
+						<dl>
+							<dt><img src="../7-guide/7_6.jpg"/></dt>
+							<dd>性感连衣裙</dd>
+						</dl>
+						<dl>
+							<dt><img src="../7-guide/7_7.jpg"/></dt>
+							<dd>气质短裙</dd>
+						</dl>
+						<dl>
+							<dt><img src="../7-guide/7_8.jpg"/></dt>
+							<dd>可爱厚底鞋</dd>
+						</dl>
+						<ul id="ulleft">
+							<li>杂志款</li>
+							<li>打底</li>
+							<li>哈伦</li>
+							<li>包臀裙</li>	
+						</ul>
+					</div>
+				</div>
+
+				<div class="middle">
+					<div>
+						<h4>服饰·美容</h4>
+						<dl>
+							<dt><img src="../7-guide/7_9.jpg"/></dt>
+							<dd>去她的国家转转</dd>
+						</dl>
+						<ul  id="ulmiddle">
+							<li>美腿！小跟鞋斗短裙锥裤＋单鞋勾男！</li>
+							<li>座腰减5岁扎发必备显瘦＋装嫩韩范表</li>
+							<li>美白勾男友｛蜜桃妆因召决速美白3维度</li>
+							<li>化妆一重口昧恐怖变女生男相这样化</li>
+							<li>韩美包〔潮发饰〕面膜控假睫毛</li>
+						</ul>
+					</div>
+					<div>
+						<h4>家居·母婴</h4>
+						<dl>
+							<dt><img src="../7-guide/7_10.jpg"/></dt>
+							<dd>80后玩转30平小户</dd>
+						</dl>
+						<ul id="ulmiddle">
+							<li>属丝6万装132平牛！90平简约改造</li>
+							<li>运动6式血腹操千坦10个动作必须瘦</li>
+							<li>凤凰澳门10大路边摊6大蜜月地想去吗</li>
+							<li>萌主狗狗版甄嵘传沉睡2千年的猫咪</li>
+							<li>减赘肉〔爱优惠〕新加坡秀宝贝</li>
+					</div>
+					<div>
+						<h4>促销汇·折扣</h4>
+						<dl>
+							<dt><img src="../7-guide/7_11.jpg"/></dt>
+							<dd>春夏装3折显瘦</dd>
+						</dl>
+						<ul id="ulmiddle">
+							<li>连衣裙+蕾丝鞋 美 亮色T＋牛仔裤4折</li>
+							<li>促消运动大牌直降促消汇招幕设计师</li>
+							<li>超值冬衣巧搭变春装全网10元包邮抢</li>
+							<li>春装备丝连衣褚3折10款撞色包潮l</li>
+							<li>春上新〔连衣裙〕美包搭J女鞋</li>
+						</ul>
+					</div>
+					<div>
+						<h4>天天特价·包邮</h4>
+						<dl>
+							<dt><img src="../7-guide/7_12.jpg"/></dt>
+							<dd>百搭显瘦韩外套</dd>
+						</dl>
+						<ul id="ulmiddle">
+							<li>衬衣＋窄脚裤4折起春夏韩潮包29元起</li>
+							<li>5折』宽松T．腼徽之裤楼空备丝衫巧搭</li>
+							<li>特卖胖座MM都必备时尚潮物10元抢</li>
+							<li>春装素颜妆吝谁最美居家必备19元起</li>
+							<li>新潮〔高跟鞋〕瘦身二百搭款］</li>
+						</ul>
+					</div>
+					<div>
+						<h4>专辑·精品收藏</h4>
+						<dl>
+							<dt><img src="../7-guide/7_13.jpg"/></dt>
+							<dd>出街必备款</dd>
+						</dl>
+						<ul id="ulmiddle">
+							<li>超惹人爱萌物显座遮肉蝙蝠衫</li>
+							<li>牛仔民族风女装单品美好精致餐具</li>
+							<li>婚纱］ZAKKA小物推荐性感内在美内衣</li>
+							<li>波点潮流时尚女鞋创意瓶瓶罐罐</li>
+							<li>手包1［豹纹〕奢华旗袍</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="right">
+					<div>
+						<h4>明星<span class="floatright">女星卖二手热议 抢钱还是环保</span></h4>
+						<dl><dt><img src="../7-guide/7_14.jpg"/></dt>
+						<dd>刘嘉玲卖闲置</dd>
+						</dl>
+						<dl><dt><img src="../7-guide/7_15.jpg"/></dt>
+						<dd>海涛卖萌新品</dd>
+						</dl>
+						<dl><dt><img src="../7-guide/7_16.jpg"/></dt>
+						<dd>胡一菲做网模</dd>
+						</dl>
+					</div>
+					<div>
+						<h4>清仓<span class="floatright">潮装秒杀</span></h4>
+						<dl>
+							<dt><img src="../7-guide/7_17.jpg"/></dt>
+							<dd>超萌夏季京拖</dd>
+						</dl>
+						<dl>
+							<dt><img src="../7-guide/7_18.jpg"/></dt>
+							<dd>糖果色连衣褚</dd>
+						</dl>
+						<dl>
+							<dt><img src="../7-guide/7_19.jpg"/></dt>
+							<dd>韩版宽松衬衫</dd>
+						</dl>
+					</div>	
+					<div>
+						<h4>试用<span class="floatright">3月女人节 10元付邮领取</span></h4>
+						<dl>
+							<dt><img src="../7-guide/7_20.jpg"/></dt>
+							<dd>
+								春修身小西装<br/>
+								10元拿走
+							</dd>
+						</dl>
+						<dl>
+							<dt><img src="../7-guide/7_21.jpg"/></dt>
+							<dd>
+								蕾丝花边上衣<br/>
+								免费领5件
+							</dd>
+						</dl>
+						<dl>
+							<dt><img src="../7-guide/7_22.jpg"/></dt>
+							<dd>
+								多色系平底鞋<br/>
+								免费任抢
+							</dd>
+						</dl>
+					</div>
+					<div>
+						<img class="divright" src="../7-guide/7_23.jpg"/>
+					</div>
+					<div>
+						<h4>生活私搭</h4>
+						<dl>
+							<dt><img src="../7-guide/7_24.jpg"/></dt>
+							<dd>
+								人气单品<br/>
+								惊艳明星范儿
+							</dd>
+						</dl>
+						<dl>
+							<dt><img src="../7-guide/7_25.jpg"/></dt>
+							<dd>
+								搭配课堂<br/>
+								气质街拍穿搭
+							</dd>
+						</dl>
+						<dl>
+							<dt><img src="../7-guide/7_26.jpg"/></dt>
+							<dd>
+								潮人街拍<br/>
+								矮个潮搭必学
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

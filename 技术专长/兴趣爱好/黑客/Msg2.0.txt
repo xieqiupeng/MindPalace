@@ -1,0 +1,18 @@
+拿到QQ密码。
+
+一般方法是删除不掉的，建议别删除，因为那是09版qq改版所换的加密方式，不会给MsgEx.db了，都是Msg2.0了。
+听说下一版本的QQ会更加的注重加密方式的处理，msg2.0.db，不会象之前的msgex那么容易破解。很好的保护了你的聊天记录等等，但是，也不是没办法破解，我给你一个方法，
+
+1.需要：7-zip，DBcompresser或者Paradox （Paradox用起来麻烦需要library，推荐DBC）
+
+2 用7—zip释放你需要破解得msg2.0.db。 得到buddy，discuss，group，mobile，system这5个文件夹。以及lastmsginfo.dat ， Matrix.dat，seqbase.dat 这3个加密的dat文件。
+
+3 需要你自己的msg2.0 并且释放。得到buddy，discuss，group，mobile，system这5个文件夹。以及lastmsginfo.dat ， Matrix.dat，seqbase.dat 这3个加密的dat文件。注：buddy是重点，其余的文件夹缺失，没有关系。
+
+4 打开需破解的buddy文件夹，里面就是很多qq号码组成的文件夹。再任意打开其中一个看到content.dat，index.dat，info.dat 三个dat文件。 将自己的info.dat 复制到需破解buddy文件夹下。根据号码复制自己需要的。当然，你也可以全部复制。
+
+5 把7-zip 释放的3个你自己的dat文件，既lastmsginfo.dat ， Matrix.dat，seqbase.dat 覆盖到需破解的msq2.0文件夹中。（却一不可）
+
+6 用DBcompresse组合文件，重命名为msg2.0.db，默认储存路径为C:\gainover 。放入user\XXXX里面。（DOS可以直接combine,这个我没研究，看到有人研究过）
+
+7 用复制合成的msg2.0 登陆自己的号码，就能直接看到其中记录。目标人一般在你的黑名单或已删除联系人中。

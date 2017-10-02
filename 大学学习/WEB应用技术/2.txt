@@ -1,0 +1,5 @@
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+ 
+        TextBox1.Text = (TextBox1.Text.Replace(TextBox2.Text.ToString(), TextBox3.Text.ToString()));
+    }

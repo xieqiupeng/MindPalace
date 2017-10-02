@@ -1,0 +1,5 @@
+/* Hack IE - Point of ViUU - CSS */
+.perspective_diap p.top { top: 12px; }
+.perspective_diap p.bottom { bottom: 24px; }
+.perspective_diap p.full_width { top: 0px; }
+.perspective_diap p.right_side { top: 0px; }
