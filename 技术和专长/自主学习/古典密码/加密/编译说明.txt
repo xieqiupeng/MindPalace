@@ -1,0 +1,13 @@
+可执行文件需要在linux系统redhat4.0以上版本下执行，如果由于操作系统的原因，可执行文件无法执行，可以把源cpp文件重新编译。
+执行编译语句：
+g++ -o encrypt encrypt.cpp
+g++ -o dencrypt dencrypt.cpp
+
+程序运行前提，保证以下路径存在：
+/home/encrypt/origin/  加密原始路径
+/home/encrypt/after/	加密后文件生成路径
+/home/dencrypt/origin/	解密原始路径
+/home/dencrypt/after/	解密后生成文件路径
+/home/encrypt/log/	错误日志路径
+
+输入建立一个txt文件。放入/home/encrypt/origin/后，启动加密程序。完成加密后，将密文文件放到/home/dencrypt/origin/，启动解密程序。将解密后文件与原始明文文件比对文件内容即可。
