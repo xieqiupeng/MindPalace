@@ -1,2 +1,0 @@
-使用ServletCheckPassword
-验证用户名密码在数据库中是否存在。
