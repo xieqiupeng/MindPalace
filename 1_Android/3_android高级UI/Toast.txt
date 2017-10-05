@@ -1,4 +1,0 @@
-Toast很简单，像是alert
-需要三个参数，界面，内容，浮现时间。
-
-Toast.makeText(MainActivity.this, ""+index, Toast.LENGTH_LONG);
