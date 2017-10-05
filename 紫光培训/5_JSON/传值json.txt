@@ -1,7 +1,0 @@
-			'<%	for(int j=0;j<staffList.size();j++)
-				{
-					ArrayList<String> staffName =new ArrayList<String>();
-			%>'		
-					departmentStaff.staff[i][j]='<%=staffName.get(j)%>';
-			'<%	}
-			%>'

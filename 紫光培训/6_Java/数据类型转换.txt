@@ -1,3 +1,0 @@
-超链接传值两个用and链接
-
-int userId =integer.praseInt（userIdString）;
