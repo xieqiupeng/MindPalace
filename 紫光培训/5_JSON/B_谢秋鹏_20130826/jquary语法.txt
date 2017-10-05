@@ -1,9 +1,0 @@
-var obj = document.getElementById("province").innerHTML;
-var name =$("#province").attr("id");
-alert(name);
-
-jquery不适合传参数，因为jquery特殊的语法
-
-$()是会影响到javascript语法的。
-
-而传参对象比值更为普遍。
