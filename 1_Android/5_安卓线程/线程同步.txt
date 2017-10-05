@@ -1,9 +1,0 @@
-
-同步：需要资源共享的时候需要同步。
-同步方法和同步判断
-synchronized（this）｛
-	
-｝
-public synchronized void function（）｛
-
-}
