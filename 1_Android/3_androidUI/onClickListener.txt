@@ -1,5 +1,0 @@
-1、可以new一个onclicklister。
-
-2、可以让activity继承onclicklister接口。
-
-在onclick方法中统一判断
