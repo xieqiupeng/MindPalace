@@ -1,9 +1,0 @@
-第一次启动程序 application::onCreate() --> activity::onCreate() --> service::onCreate(),
-
-按"Home"键后程序在后台运行，启动其他程序，一段时间后从LogCat可以看到application::onCreate() -->service::onCreate(). (activity的onCreate()没有被调用）
-
-
-android 中的进程分为六种。所以service是一个进程，application是一个进程，activity运行在application的进程里面。
-当内存紧张的时候，activitymanagerservice会重新计算并调用lowmemerykiller进行杀死低优先级的
-
-所以执行service的oncreate是正常的，但是执行application的oncreate而不执行activity的oncreate就神奇了
