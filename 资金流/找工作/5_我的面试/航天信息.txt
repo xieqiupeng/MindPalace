@@ -1,7 +1,0 @@
-Js跳转到servlet的方式，不用submit form()
-
-Promot
-
-单例模式
-
-Js如何继承
