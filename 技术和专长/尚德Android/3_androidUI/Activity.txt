@@ -1,0 +1,15 @@
+Activity
+窗口的
+有无销毁、
+完全遮盖、
+小框体遮盖
+Destory stop pause
+对应的有就是
+Create start resume
+
+如果是fragment
+getActivity()
+
+哪个里边有
+<intent-filter>
+那么就先运行哪个activity。
