@@ -1,0 +1,82 @@
+﻿<html>
+<head>
+    <title>skills</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <link rel=stylesheet href="main.css" type="text/css">
+    <script src="" type="text/javascript"></script>
+    <style type="text/css">
+
+    </style>
+    <script type="text/javascript"></script>
+</head>
+
+<body>
+<div id="edge">
+    <span class="bold">附录2</span>
+    <span class="bold">项目经验：</span>
+    <br/>
+    <div id="twirlingvr">
+        <span class="bold">TwirlingVR</span><br/>
+        <!--<a href="https://github.com/xieqiupeng/TwirlingVR">-->
+            <!--https://github.com/xieqiupeng/AudioSDK/blob/master/README.md-->
+        <!--</a><br/>-->
+        主要功能：<br/>
+        * 在线全景声视频播放。<br/>
+        * 视频下载及本地播放管理。<br/>
+        * 支持m3u8,rtmp流的全景移动端直播。<br/>
+        * 全景音频的在线播放。<br/>
+        * 拓灵账号及三方账号注册登录。<br/>
+        * 相关业务及产品介绍。<br/>
+        * 录音功能，集成回声消除(AEC)和降噪(ANS)算法。<br/>
+        * 支持语音识别。<br/>
+
+        技术架构：<br/>
+        * 总架构使用了4层dependences：App -> libGvr -> libExo -> audioSDK<br/>
+        * MVP：使用Presenter减少control层的负担。<br/>
+        * MVVM：使用DataBinding不在直接操作view，对model的处理。<br/>
+        * Rxjava2: 高扩展性，高可读性，简化线程操作。<br/>
+        * Dagger2: 依赖注入，减少耦合。<br/>
+        * 基于ExoPlayer视频播放组件。<br/>
+        * 基于GVR的全景渲染，OpenGL。<br/>
+        * 基于TwirlingAudioSDK的全景声播放组件。<br/>
+        * Zip包的下载及解压。<br/>
+        * 基于Rxdownload的下载。其中Rxdownload是star超过1000的参与的开源项目。
+    </div>
+    <br/>
+    <div id="twirlingapi">
+        <span class="bold">TwirlingAPI</span><br/>
+        <!--<a href="https://github.com/xieqiupeng/TwirlingVR">-->
+        <!--https://github.com/xieqiupeng/AudioSDK/blob/master/README.md-->
+        <!--</a><br/>-->
+        主要功能：<br/>
+        * 会员系统，支付系统的开发。<br/>
+        技术架构：<br/>
+        * 基于vertx.io的扁平化开发。<br/>
+        * 基本符合RESTful接口规范。<br/>
+        * 数据库基本符合第二范式。<br/>
+    </div>
+    <br/>
+    <div id="audiosdk">
+        <span class="bold">AudioSDK</span><br/>
+        <!--<a href="https://github.com/xieqiupeng/AudioSDK">-->
+            <!--https://github.com/xieqiupeng/AudioSDK/blob/master/README.md-->
+        <!--</a><br/>-->
+        技术架构：<br/>
+        * 使用openGL完成空间界面的开发。<br/>
+        * 音频解码。<br/>
+        * 音频的头部信息。<br/>
+        * pcm解码，为AudioTrack中解析出的pcm添加算法。<br/>
+    </div>
+    <br/>
+    <div id="ovrsdk">
+        <span class="bold">OVRSDK</span><br/>
+        <a href="https://github.com/xieqiupeng/ovr_sdk_mobile_1.0.4">
+            https://github.com/xieqiupeng/ovr_sdk_mobile_1.0.4/blob/master/README.md
+        </a><br/>
+        技术架构：<br/>
+        * Socket服务端控制通信。<br/>
+        * jni开发播放功能。<br/>
+    </div>
+</div>
+</body>
+</html>
