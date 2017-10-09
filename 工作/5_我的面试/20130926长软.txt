@@ -1,0 +1,9 @@
+Forward内部跳转与redirect重定向跳转的区别
+
+Forward服务器发给浏览器，访问url；可以共享数据；效率高
+
+Redirect浏览器重新请求地址，新url；不能共享数据；效率低
+
+Request九种内置对象：
+
+查书。
