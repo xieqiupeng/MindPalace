@@ -1,9 +1,0 @@
-SharedPreferences
-
-文件存储
-
-SQLite数据库
-
-Content provider内容提供器
-
-网络存储
