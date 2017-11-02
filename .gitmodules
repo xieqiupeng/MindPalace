@@ -4,3 +4,6 @@
 [submodule "技术和专长"]
 	path = 技术和专长
 	url = https://github.com/xieqiupeng/Technology-and-Expertise
+[submodule "逻辑链条"]
+	path = 逻辑链条
+	url = https://github.com/xieqiupeng/Logic-Chain
