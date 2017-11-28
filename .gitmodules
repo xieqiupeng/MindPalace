@@ -16,3 +16,6 @@
 [submodule "日常生活"]
 	path = 日常生活
 	url = https://github.com/xieqiupeng/Daily-Life
+[submodule "Career"]
+	path = Career
+	url = https://github.com/xieqiupeng/Career
