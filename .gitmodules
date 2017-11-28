@@ -13,3 +13,6 @@
 [submodule "关系"]
 	path = 关系
 	url = https://github.com/xieqiupeng/Relationship
+[submodule "日常生活"]
+	path = 日常生活
+	url = https://github.com/xieqiupeng/Daily-Life
