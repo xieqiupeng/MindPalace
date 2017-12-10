@@ -22,3 +22,6 @@
 [submodule "资金流"]
 	path = 资金流
 	url = https://github.com/xieqiupeng/Money-Flow
+[submodule "隐私"]
+	path = 隐私
+	url = https://github.com/xieqiupeng/Concealment
