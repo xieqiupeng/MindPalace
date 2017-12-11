@@ -25,6 +25,3 @@
 [submodule "隐私"]
 	path = 隐私
 	url = https://github.com/xieqiupeng/Concealment
-[submodule "知识账本"]
-	path = 知识账本
-	url = https://github.com/xieqiupeng/Knowledge-Book
