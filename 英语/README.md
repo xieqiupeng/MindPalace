@@ -1,6 +1,6 @@
 ### English
 
-How I can descripe it?
+How can I descripe it?
 
 我读英文和中文的速度，
 
